@@ -1,0 +1,19 @@
+---
+title: "About me"
+---
+
+I grew up in South Tyrol, Italy. I am a first generation academic, and before joining the IP-PAD Doctoral Network, I completed my MSc in Psychology with a specialization in social neuroscience, cognitive psychology and research methods at the University of Vienna. In my master thesis, I investigated factors that modulate neural activation during action observation. I also got to opportunity to work as a research assistant in the Social, Cognitive and Affective Neuroscience (SCAN) Unit, where I contributed to projects on comparative neuroscience with dogs and humans and where I found my passion for research under the guidance of my supervisors Magdalena and Claus, and in the Methods Department of the University of Vienna, where I contributed to statistics lectures and mindfulness research (see publications).
+
+You can hear a bit more about my current research interests and myself in the short video below. 
+
+----
+
+{{< video https://www.youtube.com/watch?v=c7hNVc8qRc8 >}}
+
+----
+
+```{=html}
+<div  style="margin: 30px; text-align: center;">
+<a class="btn btn-primary" href="https://www.ippad.eu/" role="button" target="_blank" style="padding: 15px 30px;">IP-PAD MSCA Doctoral Network Member</a>
+</div>
+```
