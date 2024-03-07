@@ -1,0 +1,32 @@
+---
+title: "Lost between Disciplines"
+author: ""
+title-block-banner: false
+page-layout: full
+description-meta: "Welcome to my blog! In the future, I plan to write short blog articles and tutorials on topics lost in the interdisciplinarity of my research between social neuroscience, cognitive psychology, political science and applied statistics."
+
+listing:
+  - id: posts_2024
+    contents: 
+      - "more-to-follow/index.qmd"
+    sort: "date desc"
+    template: ../html/blog/listing.ejs
+
+toc-title: Year
+toc-location: right
+date-format: "MMMM D, YYYY"
+image: ""
+code-tools: false
+comments: false
+---
+
+Welcome to my blog *Lost between Disciplines*. As an interdisciplinary early stage researcher, I plan to share some of my experiences, helpful resources and tutorials within and beyond my fields of expertise on this page. I hope some of this may be helpful, and I am always happy to discuss any of this!
+
+## 2024
+
+:::{#posts_2024}
+:::
+
+---
+
+The blog post listing is based on the website source of [Andrew Heiss](https://www.andrewheiss.com/), and the tutorial and website of [Marvin Schmitt](https://www.marvinschmitt.com/blog/), both of whom have created incredible resources under the CC-BY-SA 4.0 license. Thank you!

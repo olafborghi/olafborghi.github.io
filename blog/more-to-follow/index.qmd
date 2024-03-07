@@ -1,0 +1,18 @@
+---
+title: "More to follow soon!"
+description: "I hope to share some insights here soon!"
+date: 03-07-2024
+categories: 
+  - news
+# image: hello-world-thumbnail.png
+reference-location: margin
+draft: false
+# title-block-banner: hello-world-bg.jpg
+
+format:
+  html:
+    include-before-body: ../../html/margin_image.html
+    include-after-body: ../../html/blog_footer.html
+---
+
+For now, this is just a placeholder. I plan to share my experiences, learning experiences, resources and tutorials here along my journey to obtain my PhD in a highly interdisciplinary research field. So stay tuned!
