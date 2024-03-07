@@ -5,6 +5,7 @@ title: "Publications"
 My work related to my PhD project and the politics of adolescence is yet to be published. You can find some of my previous published work from my time as a BSc and MSc student at the university of Vienna below. For a full list of my past and current projects, please refer to my [CV](../cv).
 
 ----
+
 ## Day-to-Day Associations between Mindfulness and Perceived Stress: Insights from Random Intercept Cross-Lagged Panel Modeling
 
 **Authors:** Olaf Borghi, Martin Voracek, Ulrich S. Tran
@@ -25,6 +26,7 @@ This work is currently in the final stage of review.
 **Conclusion:** Our results challenge prior results and assumptions regarding mindfulness as a buffering and protective factor against daily stress. With the exception of Nonreact, mindfulness was either positively associated with perceived stress, or in turn perceived stress appeared to interfere with the ability to stay mindful in daily life. 
 :::
 
+
 ----
 
 ## [Differential associations of the two higher-order factors of mindfulness with trait empathy and the mediating role of emotional awareness](https://www.nature.com/articles/s41598-023-30323-6)
@@ -39,6 +41,8 @@ This work is currently in the final stage of review.
 Empathy enables us to understand the emotions of others and is an important determinant of prosocial behavior. Investigating the relationship between mindfulness and empathy could therefore provide important insights into factors that promote interpersonal understanding and pathways that contribute to prosocial behavior. As prior studies have yielded only inconsistent results, this study extended previous findings and investigated for the first time the associations of two important factors of mindfulness (Self-regulated Attention [SRA] and Orientation to Experience [OTE]) with two commonly proposed components of empathy (cognitive empathy and affective empathy). Using a community sample of N = 552 German-speaking adults, the two mindfulness factors were differentially associated with cognitive and affective empathy. SRA correlated positively with cognitive empathy (r = 0.44; OTE: r = 0.09), but OTE correlated negatively with affective empathy (r = −0.27; SRA: r = 0.11). This negative association was strongest for one specific aspect of affective empathy, emotional contagion. Revisiting previously reported mediating effects of emotion regulation, we found that emotional awareness mediated the associations with both components of empathy, but only for SRA. Together, these findings imply that mindfulness benefits the cognitive understanding of others’ emotions via two distinct pathways: by promoting emotional awareness (SRA) and by limiting the undue impact of others’ emotions on oneself (OTE).
 :::
 
+
+----
 
 ```{=html}
 <div  style="margin: 30px; text-align: center;">

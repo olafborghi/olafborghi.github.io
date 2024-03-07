@@ -25,21 +25,23 @@ $yellow:  #F6D645 !default;
 $green:   #118230 !default;
 $teal:    #068194 !default;
 $cyan:    #3093CF !default;
-$light-pink: #FFCED6 !default;
+$link-pink: #FF8BA3 !default;
+$light-pink: #FFADBE !default;
 
 $primary:   $light-pink!default;
-$secondary: $gray-700 !default;
+$secondary: $gray-900 !default;
 $success:   $green !default;
 $info:      $cyan !default;
 $warning:   $orange !default;
 $danger:    $red !default;
 $light:     $gray-400 !default;
 $dark:      $black !default;
+$link:      $link-pink !default;
 
 
 
 // Links
-$link-color: $primary !default;
+$link-color: $link !default;
 $link-decoration: none !default;
 $link-hover-color: $red !default;
 $link-hover-decoration: underline !default;

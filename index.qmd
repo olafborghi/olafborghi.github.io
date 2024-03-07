@@ -21,7 +21,8 @@ about:
 ::: {#about-block}
 :::
 
-### Olaf Borghi - Early Stage Researcher
+### Olaf Borghi, MSc
+
 
 I am an early stage researcher and PhD student in the MSCA doctoral network “[Interdisciplinary Perspectives of the Politics of Adolescence & Democracy](www.ippad.eu)” at Royal Holloway, University of London. In this project I investigate the relative contributions of cognitive and emotional traits to ideological thinking across the developmental window of adolescence.
 
@@ -33,7 +34,7 @@ If you are interested in my work or would like to collaborate, please feel free 
 
 **Research interests**
 
-- Cognitive and emotional traits & their development
+- Cognitive and emotional traits & development
 - Political decision making
 - Motivated reasoning & Bayesian updating
 - Ideology & dogmatism
@@ -48,6 +49,6 @@ If you are interested in my work or would like to collaborate, please feel free 
 
 ```{=html}
 <div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the tutorial for this template (+ download link)</a>
+<a class="btn btn-primary" href="https://www.ippad.eu/" role="button" target="_blank" style="padding: 15px 30px;">IP-PAD MSCA Doctoral Network Member</a>
 </div>
 ```
