@@ -31,7 +31,7 @@ This work is currently in the final stage of review.
 
 ## [Differential associations of the two higher-order factors of mindfulness with trait empathy and the mediating role of emotional awareness](https://www.nature.com/articles/s41598-023-30323-6)
 
-**Reference:** Borghi, O., Mayrhofer, L., Voracek, M. et al. Differential associations of the two higher-order factors of mindfulness with trait empathy and the mediating role of emotional awareness. Sci Rep 13, 3201 (2023). https://doi.org/10.1038/s41598-023-30323-
+**Reference:** Borghi, O., Mayrhofer, L., Voracek, M., & Tran, U. S. (2023). Differential associations of the two higher-order factors of mindfulness with trait empathy and the mediating role of emotional awareness. *Scientific Reports*, *13*(1). https://doi.org/10.1038/s41598-023-30323-6
 
 **Open data & code:** [Link to OSF](https://osf.io/ujp3e/)
 
