@@ -5,7 +5,8 @@ website:
   title: "Olaf Borghi" # Your name
   description: "MSCA Early Stage Researcher"  # A brief slogan (optional)
   image: img/my_image.jpg
-  
+  site-url: "https://www.olafborghi.com"
+  repo-url: "https://github.com/olafborghi/olafborghi.gihub.io"
   favicon: img/favicon.png
   
   # start of the navigation bar at the top of the website
@@ -15,14 +16,15 @@ website:
     
     # your sub-pages
     left:
-      - text: "About me"
+      - text: "About"
         href: about/index.qmd
-      - text: "Publications"
-        href: publications/index.qmd
-      - text: "Blog Posts"
-        href: blog/index.qmd
       - text: "CV"
         href: cv/index.qmd
+      - text: "Research"
+        href: research/index.qmd
+      - text: "Blog"
+        href: blog/index.qmd
+
     
     # your social media handles
     right:
@@ -42,11 +44,12 @@ website:
   search: 
     location: navbar
     type: textbox
+  
   page-footer: 
     left: |
       <span class="faux-block">&#169; 2024 Olaf Borghi CC BY-SA 4.0</span>
     center: |
-      <span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">This website is based on this very helpful tutorial</a></span>
+      <span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">This website is based on the websites of Marvin Schmitt and Andrew Heiss</a></span>
     right: |
       <span class="faux-block"><a href="https://github.com/olafborghi/olafborghi.github.io/">View source on GitHub</a></span>
 

@@ -1,0 +1,76 @@
+---
+title: "Differential associations of the two higher-order factors of mindfulness with trait empathy and the mediating role of emotional awareness"
+date: 2021-04-27
+author:
+  - name: Olaf Borghi
+    orcid: 0000-0001-9724-2839
+    affiliation: University of Vienna
+  - name: Lukas Mayrhofer
+    orcid: 0000-0001-9035-7406
+    affiliation: University of Vienna
+  - name: Martin Voracek
+    orcid: 0000-0001-6109-6155
+    affiliation: University of Vienna
+  - name: Ulrich S. Tran
+    orcid: 0000-0001-6109-6155
+    affiliation: University of Vienna
+categories: 
+  - Mindfulness
+  - Empathy
+  - Observational study
+  - Structural equation modeling
+
+pub-info:
+  reference: >- 
+    <strong>Borghi, O.</strong>, Mayrhofer, L., Voracek, M., & Tran, U. S. (2023). Differential associations of the two higher-order factors of mindfulness with trait empathy and the mediating role of emotional awareness. Scientific Reports, 13(1), Article 1. https://doi.org/10.1038/s41598-023-30323-6 
+
+  links:
+    - name: PDF of article
+      url: borghi-etal-2023-mindfulness-empathy.pdf
+      icon: fa-solid fa-file-pdf
+      local: true
+    - name: Online version
+      url: https://doi.org/10.1038/s41598-023-30323-6
+      icon: fa-solid fa-scroll
+    - name: Data and code
+      url: https://osf.io/ujp3e/
+      icon: fa-brands fa-github
+      
+  extra: >-
+    This was my first, first author paper as a result from my undergratuate (BSc) thesis. If I would do this study now, I would probably do much different and maybe approach some analyses from a different point of view. Still, this was a huge learning process for me. 
+doi: 10.1038/s41598-023-30323-6
+---
+
+![Open data](data_large_color.png) &emsp; ![Open](materials_large_color.png)
+
+## Important links
+
+- [Paper](https://doi.org/10.1038/s41598-023-30323-6)
+- [OSF repository](https://osf.io/ujp3e/)
+
+## Abstract
+
+Empathy enables us to understand the emotions of others and is an important determinant of prosocial behavior. Investigating the relationship between mindfulness and empathy could therefore provide important insights into factors that promote interpersonal understanding and pathways that contribute to prosocial behavior. As prior studies have yielded only inconsistent results, this study extended previous findings and investigated for the first time the associations of two important factors of mindfulness (Self-regulated Attention [SRA] and Orientation to Experience [OTE]) with two commonly proposed components of empathy (cognitive empathy and affective empathy). Using a community sample of N = 552 German-speaking adults, the two mindfulness factors were differentially associated with cognitive and affective empathy. SRA correlated positively with cognitive empathy (r = 0.44; OTE: r = 0.09), but OTE correlated negatively with affective empathy (r = −0.27; SRA: r = 0.11). This negative association was strongest for one specific aspect of affective empathy, emotional contagion. Revisiting previously reported mediating effects of emotion regulation, we found that emotional awareness mediated the associations with both components of empathy, but only for SRA. Together, these findings imply that mindfulness benefits the cognitive understanding of others’ emotions via two distinct pathways: by promoting emotional awareness (SRA) and by limiting the undue impact of others’ emotions on oneself (OTE).
+
+## Citation
+
+```bibtex
+@article{borghiDifferentialAssociationsTwo2023,
+  title = {Differential Associations of the Two Higher-Order Factors of Mindfulness with Trait Empathy and the Mediating Role of Emotional Awareness},
+  author = {Borghi, Olaf and Mayrhofer, Lukas and Voracek, Martin and Tran, Ulrich S.},
+  year = {2023},
+  month = feb,
+  journal = {Scientific Reports},
+  volume = {13},
+  number = {1},
+  pages = {3201},
+  publisher = {Nature Publishing Group},
+  issn = {2045-2322},
+  doi = {10.1038/s41598-023-30323-6},
+  urldate = {2023-02-24},
+  copyright = {2023 The Author(s)},
+  langid = {english},
+  keywords = {Human behaviour,Psychology},
+}
+
+```

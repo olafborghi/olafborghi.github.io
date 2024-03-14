@@ -1,5 +1,6 @@
 ---
-title: "More to follow soon!"
+title: "Hello world"
+Author: "Olaf Borghi"
 description: "I hope to share some insights here soon!"
 date: 03-07-2024
 categories: 
@@ -8,10 +9,6 @@ categories:
 reference-location: margin
 draft: false
 # title-block-banner: hello-world-bg.jpg
-
-format:
-  html:
-    include-before-body: ../../html/margin_image.html
 ---
 
 For now, this is just a placeholder. I plan to share my experiences, learning experiences, resources and tutorials here along my journey to obtain my PhD in a highly interdisciplinary research field. So stay tuned!

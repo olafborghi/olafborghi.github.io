@@ -1,0 +1,14 @@
+{
+  "hash": "982e741986e5ad9f2723111030de9440",
+  "result": {
+    "markdown": "---\ntitle: Personal website\ntitle-block-banner: \"#651e3e\"\nabout:\n  template: jolla\n  id: about-block\n  image: \"img/my_image.jpg\"\n  links:\n    - icon: twitter\n      text: Twitter\n      href: https://twitter.com/olafborghi\n    - icon: github\n      text: Github\n      href: https://github.com/olafborghi\n    - icon: linkedin\n      text: LinkedIn\n      href: https://www.linkedin.com/in/olaf-borghi-864276280/\n    - icon: envelope\n      text: Email\n      href: \"mailto:olaf.borghi@rhul.ac.uk\"  \nengine: knitr\n---\n\n::: {.cell}\n<style type=\"text/css\">\n#title-block-header .description {\n    display: none;\n}\n</style>\n:::\n\n\n::: {#about-block}\n:::\n\n### Olaf Borghi, MSc\n\n\nI am an early stage researcher and PhD student in the MSCA doctoral network “[Interdisciplinary Perspectives of the Politics of Adolescence & Democracy](www.ippad.eu)” at Royal Holloway, University of London. In this project I investigate the relative contributions of cognitive and emotional traits to ideological thinking across the developmental window of adolescence. I am particularly interested in how our current societal crises influence how young people form their political identities, which cognitive and emotional abilities underlie their political decision-making and belief-updating processes, and how we can better support the democratic involvement of young people.\n\nIf you are interested in my work or would like to collaborate, please feel free to [contact me](mailto:olaf.borghi@rhul.ac.uk).\n\n**Research interests**\n\n- Cognitive and emotional traits and their development\n- Motivated reasoning and Bayesian updating\n- Ideology, dogmatism and political decision making\n\n**Methodological interests**\n\n- Experimental and longitudinal data analysis (using SEM and LMM)\n- Computational modeling\n- Functional magnetic resonance imaging (fMRI)\n\n\n\n```{=html}\n<div  style=\"margin: 30px; text-align: center;\">\n<a class=\"btn btn-primary\" href=\"https://www.ippad.eu/\" role=\"button\" target=\"_blank\" style=\"padding: 15px 30px;\">IP-PAD MSCA Doctoral Network Member</a>\n</div>\n```\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

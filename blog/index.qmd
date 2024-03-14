@@ -1,31 +1,36 @@
 ---
-title: "Interdisciplinary Labyrinths"
-author: "Olaf Borghi"
-title-block-banner: false
-page-layout: full
-description-meta: "Welcome to my blog! In the future, I plan to write short blog articles and tutorials on topics lost in the interdisciplinarity of my research between social neuroscience, cognitive psychology, political science and applied statistics."
-
+title: "Blog"
+author: ""
+description: "My Blog"
 listing:
   - id: posts_2024
-    contents: 
-      - "more-to-follow/index.qmd"
+    contents: "2024/**/index.qmd"
     sort: "date desc"
     template: ../html/blog/listing.ejs
-
+    categories: true
+page-layout: full
 toc-title: Year
 toc-location: right
 date-format: "MMMM D, YYYY"
-image: ""
 code-tools: false
 comments: false
+engine: knitr
+freeze: false
 ---
 
-Welcome to my blog **Interdisciplinary Labyrinths**. As an interdisciplinary early stage researcher, I plan to share some of my experiences, helpful resources and tutorials within and beyond my fields of expertise on this page. I hope some of this may be helpful, and I am always happy to discuss any of this!
+```{css, echo=FALSE}
+#title-block-header .description {
+    display: none;
+}
+```
 
 ## 2024
 
 :::{#posts_2024}
 :::
+
+
+
 
 ---
 

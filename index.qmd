@@ -1,4 +1,6 @@
 ---
+title: Personal website
+title-block-banner: "#651e3e"
 about:
   template: jolla
   id: about-block
@@ -16,7 +18,14 @@ about:
     - icon: envelope
       text: Email
       href: "mailto:olaf.borghi@rhul.ac.uk"  
+engine: knitr
 ---
+
+```{css, echo=FALSE}
+#title-block-header .description {
+    display: none;
+}
+```
 
 ::: {#about-block}
 :::
@@ -24,24 +33,20 @@ about:
 ### Olaf Borghi, MSc
 
 
-I am an early stage researcher and PhD student in the MSCA doctoral network “[Interdisciplinary Perspectives of the Politics of Adolescence & Democracy](www.ippad.eu)” at Royal Holloway, University of London. In this project I investigate the relative contributions of cognitive and emotional traits to ideological thinking across the developmental window of adolescence.
-
-We live in times of multiple crises, from the aftermaths of the COVID-19 global pandemic, ongoing armed conflicts across the globe, the climate crisis, to a crisis of our democratic systems with growing polarization and the rise of right-wing populist parties in many European countries. I am interested in how these crises influence how young people form their political identities, which cognitive and emotional abilities underlie their political decision-making and belief-updating processes, and how we can better support the political involvement of young citizens.
+I am an early stage researcher and PhD student in the MSCA doctoral network “[Interdisciplinary Perspectives of the Politics of Adolescence & Democracy](www.ippad.eu)” at Royal Holloway, University of London. In this project I investigate the relative contributions of cognitive and emotional traits to ideological thinking across the developmental window of adolescence. I am particularly interested in how our current societal crises influence how young people form their political identities, which cognitive and emotional abilities underlie their political decision-making and belief-updating processes, and how we can better support the democratic involvement of young people.
 
 If you are interested in my work or would like to collaborate, please feel free to [contact me](mailto:olaf.borghi@rhul.ac.uk).
 
 **Research interests**
 
-- Cognitive and emotional traits & development
-- Political decision making
-- Motivated reasoning & Bayesian updating
-- Ideology & dogmatism
+- Cognitive and emotional traits and their development
+- Motivated reasoning and Bayesian updating
+- Ideology, dogmatism and political decision making
 
 **Methodological interests**
 
+- Experimental and longitudinal data analysis (using SEM and LMM)
 - Computational modeling
-- Experimental data analysis (LMM)
-- Longitudinal data analysis (RI-CLPM)
 - Functional magnetic resonance imaging (fMRI)
 
 
