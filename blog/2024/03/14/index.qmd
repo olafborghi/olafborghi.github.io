@@ -3,6 +3,7 @@ title: "Hello world"
 Author: "Olaf Borghi"
 description: "I hope to share some insights here soon!"
 date: 03-07-2024
+freeze: false
 categories: 
   - News
 # image: hello-world-thumbnail.png

@@ -33,7 +33,7 @@ engine: knitr
 ### Olaf Borghi, MSc
 
 
-I am an early stage researcher and PhD student in the MSCA doctoral network “[Interdisciplinary Perspectives of the Politics of Adolescence & Democracy](www.ippad.eu)” at Royal Holloway, University of London. In this project I investigate the relative contributions of cognitive and emotional traits to ideological thinking across the developmental window of adolescence. I am particularly interested in how our current societal crises influence how young people form their political identities, which cognitive and emotional abilities underlie their political decision-making and belief-updating processes, and how we can better support the democratic involvement of young people.
+I am an early stage researcher and PhD student in the MSCA doctoral network “[Interdisciplinary Perspectives of the Politics of Adolescence & Democracy](www.ippad.eu)” at Royal Holloway, University of London. In this project I investigate the relative contributions of cognitive and emotional traits to ideological thinking across the developmental window of adolescence. I am particularly interested in how our current societal crises influence how young people form their political identities, which cognitive and emotional abilities underlie their political decision-making and belief-updating processes, and how we can better support their democratic involvement.
 
 If you are interested in my work or would like to collaborate, please feel free to [contact me](mailto:olaf.borghi@rhul.ac.uk).
 

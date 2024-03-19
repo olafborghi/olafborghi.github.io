@@ -30,8 +30,6 @@ freeze: false
 :::
 
 
-
-
 ---
 
 The blog post listing is based on the website source of [Andrew Heiss](https://www.andrewheiss.com/), and the tutorial and website of [Marvin Schmitt](https://www.marvinschmitt.com/blog/), both of whom have created incredible resources under the CC-BY-SA 4.0 license. Thank you!
