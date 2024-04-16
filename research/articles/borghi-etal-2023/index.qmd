@@ -1,6 +1,6 @@
 ---
 title: "Differential associations of the two higher-order factors of mindfulness with trait empathy and the mediating role of emotional awareness"
-date: 2021-04-27
+date: 2023-02-24
 author:
   - name: Olaf Borghi
     orcid: 0000-0001-9724-2839
@@ -26,7 +26,7 @@ pub-info:
 
   links:
     - name: PDF of article
-      url: borghi-etal-2023-mindfulness-empathy.pdf
+      url: research/articles/borghi-etal-2023/borghi-etal-2023-mindfulness-empathy.pdf
       icon: fa-solid fa-file-pdf
       local: true
     - name: Online version

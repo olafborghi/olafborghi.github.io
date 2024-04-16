@@ -7,7 +7,7 @@ categories:
   - r
   - Bayes
   - Linear regression
-freeze: false
+freeze: true
 format:
   html:
     toc-depth: 4

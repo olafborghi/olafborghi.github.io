@@ -6,10 +6,6 @@ listing:
     sort: "date desc"
     template: ../html/research/listing.ejs
     categories: true
-  - id: working-papers
-    contents: "working-papers/*/index.qmd"
-    sort: "date desc"
-    template: ../html/research/listing.ejs
   - id: posters
     contents: "posters/*/index.qmd"
     sort: "date desc"
@@ -26,12 +22,6 @@ Here you can find my published journal articles, some working papers and preprin
 ## Journal articles
 
 :::{#articles}
-:::
-
-
-## Working papers
-
-:::{#working-papers}
 :::
 
 

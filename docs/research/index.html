@@ -98,34 +98,6 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-working-papers .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-website','listing-project','listing-execute','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-include-back-link','listing-title','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-website","listing-project","listing-execute","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-include-back-link","listing-title","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-working-papers'] = new List('listing-working-papers', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-posters .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -264,7 +236,6 @@ window.Quarto = {
 
             
             
-            
                     </div>
     </div>
     
@@ -288,7 +259,6 @@ window.Quarto = {
    
   <ul>
   <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link active" data-scroll-target="#journal-articles">Journal articles</a></li>
-  <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working papers</a></li>
   <li><a href="#posters" id="toc-posters" class="nav-link" data-scroll-target="#posters">Posters</a></li>
   </ul>
 </nav>
@@ -307,7 +277,72 @@ window.Quarto = {
 <div class="research project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-categories="Mindfulness,Empathy,Observational study,Structural equation modeling" data-listing-date-sort="1619478000000" data-listing-file-modified-sort="1710838696561" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="314">
+        <li class="project" data-index="0" data-categories="Mindfulness,Perceived stress,Longitudinal survey study,Random-intercept cross-lagged panel model" data-listing-date-sort="1713222000000" data-listing-file-modified-sort="1713276400474" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
+            <div class="project-content listing-pub-info">
+                <p><strong>Borghi, O.</strong>, Voracek, M., &amp; Tran, U. S. (2024). Day-to-day associations between mindfulness and perceived stress: Insights from random intercept cross-lagged panel modeling. Frontiers in Psychology, 15. https://doi.org/10.3389/fpsyg.2024.1272720</p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Mindfulness">
+                            Mindfulness
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Perceived stress">
+                            Perceived stress
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Longitudinal survey study">
+                            Longitudinal survey study
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Random-intercept cross-lagged panel model">
+                            Random-intercept cross-lagged panel model
+                        </a></div>
+                    
+            </div>
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/articles/borghi-etal-2024/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="../research/articles/borghi-etal-2024/borghi-etal-2024-mindfulness-stress.pdf">
+                        
+                            <i class="fa-solid fa-file-pdf"></i> PDF of article
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://doi.org/10.3389/fpsyg.2024.1272720">
+                        
+                            <i class="fa-solid fa-scroll"></i> Online version
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://osf.io/7tnwq/">
+                        
+                            <i class="fa-brands fa-github"></i> Data and code
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li class="project" data-index="1" data-categories="Mindfulness,Empathy,Observational study,Structural equation modeling" data-listing-date-sort="1677196800000" data-listing-file-modified-sort="1713275411952" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="314">
             <div class="project-content listing-pub-info">
                 <p><strong>Borghi, O.</strong>, Mayrhofer, L., Voracek, M., &amp; Tran, U. S. (2023). Differential associations of the two higher-order factors of mindfulness with trait empathy and the mediating role of emotional awareness. Scientific Reports, 13(1), Article 1. https://doi.org/10.1038/s41598-023-30323-6</p>
             </div>
@@ -345,7 +380,7 @@ window.Quarto = {
                         
                     <li class="project-link">
                         
-                        <a href="../borghi-etal-2023-mindfulness-empathy.pdf">
+                        <a href="../research/articles/borghi-etal-2023/borghi-etal-2023-mindfulness-empathy.pdf">
                         
                             <i class="fa-solid fa-file-pdf"></i> PDF of article
                         </a>
@@ -362,76 +397,6 @@ window.Quarto = {
                     <li class="project-link">
                         
                         <a href="https://osf.io/ujp3e/">
-                        
-                            <i class="fa-brands fa-github"></i> Data and code
-                        </a>
-                    </li>
-                        
-                    
-                </ul>
-            </div>
-        </li>
-        
-</ul>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="working-papers" class="level2">
-<h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
-<div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">
-<div class="research project-list">
-<ul class="list">
-    
-        <li class="project" data-index="0" data-categories="Mindfulness,Perceived stress,Longitudinal survey study,Random-intercept cross-lagged panel model" data-listing-file-modified-sort="1710838696608" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
-            <div class="project-content listing-pub-info">
-                <p><strong>Borghi, O.</strong>, Voracek, M., &amp; Tran, U. S. (2024). Day-to-Day Associations between Mindfulness and Perceived Stress: Insights from Random Intercept Cross-Lagged Panel Modeling. (In final stage of review).</p>
-            </div>
-
-            
-            <div class="project-categories">
-                
-                    <div class="project-category"><a href="#category=Mindfulness">
-                            Mindfulness
-                        </a></div>
-                    
-                    <div class="project-category"><a href="#category=Perceived stress">
-                            Perceived stress
-                        </a></div>
-                    
-                    <div class="project-category"><a href="#category=Longitudinal survey study">
-                            Longitudinal survey study
-                        </a></div>
-                    
-                    <div class="project-category"><a href="#category=Random-intercept cross-lagged panel model">
-                            Random-intercept cross-lagged panel model
-                        </a></div>
-                    
-            </div>
-            
-            
-            <div class="project-details-listing">
-                <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="../research/working-papers/borghi-etal-2024/index.html" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
-                    
-                        
-                    <li class="project-link">
-                        
-                        <a href="../borghi-etal-2024-mindfulness-stress.pdf">
-                        
-                            <i class="fa-solid fa-file-pdf"></i> PDF of preprint
-                        </a>
-                    </li>
-                        
-                    <li class="project-link">
-                        
-                        <a href="https://osf.io/7tnwq/?view_only=be9770d36cd245dcacee84c9ce8b600d">
                         
                             <i class="fa-brands fa-github"></i> Data and code
                         </a>

@@ -1,17 +1,18 @@
 [
   {
-    "listing": "/blog/index.html",
+    "listing": "/research/index.html",
     "items": [
-      "/blog/2024/03/19/index.html",
-      "/blog/2024/03/14/index.html"
+      "/research/articles/borghi-etal-2024/index.html",
+      "/research/articles/borghi-etal-2023/index.html",
+      "/research/posters/borghi-AON-master-thesis/index.html"
     ]
   },
   {
-    "listing": "/research/index.html",
+    "listing": "/blog/index.html",
     "items": [
-      "/research/articles/borghi-etal-2023/index.html",
-      "/research/working-papers/borghi-etal-2024/index.html",
-      "/research/posters/borghi-AON-master-thesis/index.html"
+      "/blog/2024/04/16/index.html",
+      "/blog/2024/03/19/index.html",
+      "/blog/2024/03/14/index.html"
     ]
   }
 ]

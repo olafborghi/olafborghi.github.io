@@ -73,9 +73,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-website','listing-project','listing-execute','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-freeze','listing-author','listing-title','listing-Author','listing-description','listing-date','listing-categories','listing-reference-location','listing-draft','listing-path','listing-outputHref','listing-date-modified','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-embed-resources',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-website','listing-project','listing-execute','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-freeze','listing-author','listing-title','listing-Author','listing-description','listing-date','listing-categories','listing-reference-location','listing-draft','listing-path','listing-outputHref','listing-date-modified','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-embed-resources','listing-editor_options',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-website","listing-project","listing-execute","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-freeze","listing-author","listing-title","listing-Author","listing-description","listing-date","listing-categories","listing-reference-location","listing-draft","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-embed-resources"],
+      searchColumns: ["listing-website","listing-project","listing-execute","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-freeze","listing-author","listing-title","listing-Author","listing-description","listing-date","listing-categories","listing-reference-location","listing-draft","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-embed-resources","listing-editor_options"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -213,7 +213,7 @@ window.Quarto = {
   <ul>
 <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2024</a></li>
   </ul></nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Bayes">Bayes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Linear regression">Linear regression <span class="quarto-category-count">(1)</span></div><div class="category" data-category="News">News <span class="quarto-category-count">(1)</span></div><div class="category" data-category="r">r <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Bayes">Bayes <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Linear regression">Linear regression <span class="quarto-category-count">(1)</span></div><div class="category" data-category="News">News <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Path model">Path model <span class="quarto-category-count">(1)</span></div><div class="category" data-category="blavaan">blavaan <span class="quarto-category-count">(1)</span></div><div class="category" data-category="brms">brms <span class="quarto-category-count">(1)</span></div><div class="category" data-category="r">r <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content"><div class="cell">
 <style type="text/css">
@@ -226,7 +226,47 @@ window.Quarto = {
 <div id="listing-posts_2024" class="quarto-listing quarto-listing-container-custom">
 <div class="list blog">
     
-    <div class="blog-entry" data-index="0" data-categories="r,Bayes,Linear regression" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1710854490098" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3325">
+    <div class="blog-entry" data-index="0" data-categories="r,Bayes,Path model,brms,blavaan" data-listing-date-sort="1713222000000" data-listing-file-modified-sort="1713277089269" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3803">
+        <div class="metadata">          
+            <p class="date listing-date">April 16, 2024</p>
+        </div>
+        <div class="body">
+            <p class="title listing-title"><a href="../blog/2024/04/16/index.html">Teaching Myself: Bayesian Path Modeling in blavaan and brms</a></p>
+
+            
+            <div class="post-categories listing-categories">
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('r'); return false;">
+                    r
+                </div>
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('Bayes'); return false;">
+                    Bayes
+                </div>
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('Path model'); return false;">
+                    Path model
+                </div>
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('brms'); return false;">
+                    brms
+                </div>
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('blavaan'); return false;">
+                    blavaan
+                </div>
+                
+            </div>
+            
+
+            <p class="description listing-description">In previous blog posts, I looked into Bayesian linear regression - with a single predictor, multiple predictors, and a single and multiple outcome variables. blavaan and brms also allow to specify path models (i.e., structural equation models without latent variables) that allow to investigate more complex relationships between variables.</p>
+            
+            
+        </div>
+        
+    </div>
+    
+    <div class="blog-entry" data-index="1" data-categories="r,Bayes,Linear regression" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1713274676460" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3325">
         <div class="metadata">          
             <p class="date listing-date">March 19, 2024</p>
         </div>
@@ -258,7 +298,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="1" data-categories="News" data-listing-date-sort="1709769600000" data-listing-file-modified-sort="1710853395222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
+    <div class="blog-entry" data-index="2" data-categories="News" data-listing-date-sort="1709769600000" data-listing-file-modified-sort="1710853395222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
         <div class="metadata">          
             <p class="date listing-date">March 7, 2024</p>
         </div>
