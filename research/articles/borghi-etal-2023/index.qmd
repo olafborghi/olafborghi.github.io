@@ -26,7 +26,7 @@ pub-info:
 
   links:
     - name: PDF of article
-      url: research/articles/borghi-etal-2023/borghi-etal-2023-mindfulness-empathy.pdf
+      url: borghi-etal-2023-mindfulness-empathy.pdf
       icon: fa-solid fa-file-pdf
       local: true
     - name: Online version

@@ -32,7 +32,7 @@ Sys.setenv(LANG = "en")
 set.seed(42)
 ```
 
-```{r libraries}
+```{r libraries, warning=FALSE, message=FALSE}
 # use groundhog to make code maximally reproducible
 if (!require("groundhog", quietly = TRUE)) {
   install.packages("groundhog")

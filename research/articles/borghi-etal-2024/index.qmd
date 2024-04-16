@@ -23,7 +23,7 @@ pub-info:
 
   links:
     - name: PDF of article
-      url: research/articles/borghi-etal-2024/borghi-etal-2024-mindfulness-stress.pdf
+      url: borghi-etal-2024-mindfulness-stress.pdf
       icon: fa-solid fa-file-pdf
       local: true
     - name: Online version
