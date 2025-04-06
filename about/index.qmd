@@ -1,6 +1,6 @@
 ---
 title: "About me"
-title-block-banner: "#651e3e"
+title-block-banner: "#5AB2FF"
 engine: knitr
 freeze: false
 ---

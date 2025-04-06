@@ -3,10 +3,10 @@
 # website settings
 website:
   title: "Olaf Borghi" # Your name
-  description: "MSCA Early Stage Researcher"  # A brief slogan (optional)
+  description: "MSCA Doctoral Candidate"  # A brief slogan (optional)
   image: img/my_image.jpg
   site-url: "https://www.olafborghi.com"
-  repo-url: "https://github.com/olafborghi/olafborghi.gihub.io"
+  repo-url: "https://github.com/olafborghi/olafborghi.github.io"
   favicon: img/favicon.png
   
   # start of the navigation bar at the top of the website
@@ -30,8 +30,9 @@ website:
     right:
       - icon: folder-symlink
         href: https://www.olafborghi.com
+        
       - icon: twitter
-        href: https://twitter.com/olafborghi
+        href: https://bsky.app/profile/olafborghi.com
       - icon: github
         href: https://github.com/olafborghi
       - icon: envelope
@@ -47,9 +48,9 @@ website:
   
   page-footer: 
     left: |
-      <span class="faux-block">&#169; 2024 Olaf Borghi CC BY-SA 4.0</span>
+      <span class="faux-block">&#169; 2025 Olaf Borghi CC BY 4.0</span>
     center: |
-      <span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">This website is based on the websites of Marvin Schmitt and Andrew Heiss</a></span>
+      <span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">Includes code by Marvin Schmitt and Andrew Heiss CC BY 4.0.</a></span>
     right: |
       <span class="faux-block"><a href="https://github.com/olafborghi/olafborghi.github.io/">View source on GitHub</a></span>
 

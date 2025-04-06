@@ -2,7 +2,7 @@
 title: Curriculum vitae
 description: "Olaf Borghi's CV"
 date: 2024-03-05
-title-block-banner: "#651e3e"
+title-block-banner: "#5AB2FF"
 published-title: CV last updated
 engine: knitr
 freeze: false
