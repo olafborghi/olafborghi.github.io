@@ -21,11 +21,15 @@ $gray-900: #212529 !default;
 $black:    #000000 !default;
 
 $blue:    #2780e3 !default;
+$blue1: #5AB2FF !default;
+$blue2: #A0DEFF !default;
+$blue3: #CAF4FF !default;
 $indigo:  #6610f2 !default;
-$purple:  #651e3e !default;
-$pink:    #651e3e !default;
-$red:     #CF4446 !default;
-$orange:  #851e3e !default;
+$darkpurple: #3b0f70 !default;
+$purple:  #8c2981 !default;
+$pink:    #b73779 !default;
+$red:     #de4968 !default;
+$orange:  #f7705c !default;
 $light-orange:  #FB9E07 !default;
 $yellow:  #F6D645 !default;
 $green:   #118230 !default;
@@ -45,7 +49,6 @@ $dark:      $black !default;
 
 // Fonts
 
-
 $font-family-sans-serif: "Libre Franklin" !default;
 
 $headings-font-family: "Jost" !default;
@@ -58,14 +61,13 @@ $footer-font-family: "Jost" !default;
 // $font-size-base: 1.1rem !default; // Assumes the browser default, typically `16px`
 // $font-size-sm: $font-size-base * .875 !default;
 
-
 // Body
 $body-color: $gray-900 !default;
 
 // Links
-$link-color: $orange !default;
+$link-color: $blue !default;
 $link-decoration: none !default;
-$link-hover-color: $red !default;
+$link-hover-color: $darkpurple !default;
 $link-hover-decoration: underline !default;
 
 // Inline code
@@ -80,7 +82,7 @@ $toc-color: $orange;
 $toc-font-size: 1em;
 
 // Navbar
-$navbar-bg: $purple !default;
+$navbar-bg: $blue1 !default;
 $navbar-fg: $white !default;
 $navbar-hl: $light-orange !default;
 
@@ -448,13 +450,13 @@ pre.text, pre.sourceCode, .cell-output pre {
 
 .cv-download {
     font-family: $headings-font-family;
-    background-color: #651e3e;
-    border-color: #651e3e;
-    color: $white;
+    background-color: #A0DEFF;
+    border-color: #A0DEFF;
+    color: $black;
 
     &:hover {
-        background-color: $red;
-        border-color: $red;
+        background-color: $purple;
+        border-color: $purple;
         color: $white;
     }
 }

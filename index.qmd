@@ -1,14 +1,14 @@
 ---
-title: Personal website
-title-block-banner: "#651e3e"
+title: Personal website 
+title-block-banner: "#5AB2FF"
 about:
   template: jolla
   id: about-block
-  image: "img/my_image.jpg"
+  image: "img/my_image.jpeg"
   links:
     - icon: twitter
-      text: Twitter
-      href: https://twitter.com/olafborghi
+      text: Bluesky
+      href: https://bsky.app/profile/olafborghi.com 
     - icon: github
       text: Github
       href: https://github.com/olafborghi
@@ -33,25 +33,20 @@ engine: knitr
 ### Olaf Borghi, MSc
 
 
-I am an early stage researcher and PhD student in the MSCA doctoral network “[Interdisciplinary Perspectives of the Politics of Adolescence & Democracy](www.ippad.eu)” at Royal Holloway, University of London. In this project I investigate the relative contributions of cognitive and emotional traits to ideological thinking across the developmental window of adolescence. I am particularly interested in how our current societal crises influence how young people form their political identities, which cognitive and emotional abilities underlie their political decision-making and belief-updating processes, and how we can better support their democratic involvement.
+I am a doctoral candidate in the Marie-Curie network“[Interdisciplinary Perspectives of the Politics of Adolescence & Democracy](www.ippad.eu)” based at the Centre for the Politics of Feelings (Royal Holloway, University of London).
 
-If you are interested in my work or would like to collaborate, please feel free to [contact me](mailto:olaf.borghi@rhul.ac.uk).
+In my PhD, I investigate how political beliefs and attitudes develop, and the cognitive and emotional factors underlying this development. The developmental focus of my research works in two ways. First, I focus on adolescence and young adulthood – times of cognitive, emotional, and political change. Second, I study processes of belief development, examining how people incorporate new information based on their existing political stances, and different biases that affect political belief formation and updating. I also have a particular research interest into how young people feel about and imagine their future in times of multiple crises, and how this relates to their political attitudes. 
 
-**Research interests**
+If you are interested about my work, would like to chat or collaborate, do not hesitate to [contact me](mailto:olaf.borghi@rhul.ac.uk)! 
+ 
 
-- Cognitive and emotional traits and their development
-- Motivated reasoning and Bayesian updating
-- Ideology, dogmatism and political decision making
+**Methodological interests and open science**
 
-**Methodological interests**
-
-- Experimental and longitudinal data analysis (using SEM and LMM)
-- Computational modeling
-- Functional magnetic resonance imaging (fMRI)
+My work has a strong methodological and interdisciplinary focus. I combine quantitative methods and tools from cognitive psychology, political science, and neuroscience, including Bayesian modelling, survey experiments, and functional magnetic resonance imaging (fMRI). I also place a strong emphasis on open science, and commit to sharing all data and materials openly. 
 
 
 ```{=html}
 <div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.ippad.eu/" role="button" target="_blank" style="padding: 15px 30px;">IP-PAD MSCA Doctoral Network Member</a>
+<a class="btn btn-primary" href="https://www.ippad.eu/" role="button" target="_blank" style="padding: 15px 30px;">IP-PAD MSCA Doctoral Network</a>
 </div>
 ```

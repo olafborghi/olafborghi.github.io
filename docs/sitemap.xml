@@ -1,55 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.olafborghi.com/resources/index.html</loc>
-    <lastmod>2024-03-19T08:58:16.623Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.olafborghi.com/research/index.html</loc>
-    <lastmod>2024-04-16T14:04:57.315Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.olafborghi.com/research/articles/borghi-etal-2023/index.html</loc>
-    <lastmod>2024-04-16T14:30:27.597Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.olafborghi.com/cv/index.html</loc>
-    <lastmod>2024-03-19T08:58:16.420Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.olafborghi.com/blog/2024/04/16/index.html</loc>
-    <lastmod>2024-04-16T14:38:24.538Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.olafborghi.com/blog/2024/03/19/index.html</loc>
-    <lastmod>2024-04-16T14:39:26.738Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.olafborghi.com/about/index.html</loc>
-    <lastmod>2024-03-19T08:58:16.405Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.olafborghi.com/blog/2024/03/14/index.html</loc>
-    <lastmod>2024-03-19T13:03:15.222Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.olafborghi.com/blog/2024/03/30/index.html</loc>
-    <lastmod>2024-04-16T14:49:10.344Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.olafborghi.com/blog/index.html</loc>
-    <lastmod>2024-03-19T13:09:19.047Z</lastmod>
+    <lastmod>2025-04-06T12:20:20.879Z</lastmod>
   </url>
   <url>
     <loc>https://www.olafborghi.com/index.html</loc>
-    <lastmod>2024-03-19T13:25:58.611Z</lastmod>
+    <lastmod>2025-04-06T13:21:34.040Z</lastmod>
   </url>
   <url>
-    <loc>https://www.olafborghi.com/research/articles/borghi-etal-2024/index.html</loc>
-    <lastmod>2024-04-16T14:30:43.707Z</lastmod>
+    <loc>https://www.olafborghi.com/resources/index.html</loc>
+    <lastmod>2025-04-06T12:20:20.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.olafborghi.com/research/index.html</loc>
+    <lastmod>2025-04-06T12:20:20.923Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.olafborghi.com/research/articles/borghi-etal-2023/index.html</loc>
+    <lastmod>2025-04-06T12:20:20.915Z</lastmod>
   </url>
   <url>
     <loc>https://www.olafborghi.com/research/posters/borghi-AON-master-thesis/index.html</loc>
-    <lastmod>2024-03-19T08:58:16.608Z</lastmod>
+    <lastmod>2025-04-06T12:20:20.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.olafborghi.com/research/articles/borghi-etal-2024/index.html</loc>
+    <lastmod>2025-04-06T12:20:20.917Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.olafborghi.com/about/index.html</loc>
+    <lastmod>2025-04-06T12:20:20.831Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.olafborghi.com/blog/index.html</loc>
+    <lastmod>2025-04-06T12:20:20.878Z</lastmod>
   </url>
 </urlset>
