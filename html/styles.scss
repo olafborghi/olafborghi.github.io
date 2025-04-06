@@ -202,7 +202,7 @@ pre.text, pre.sourceCode, .cell-output pre {
     font-family: $footer-font-family;
 
     a {
-        color: $light-orange;
+        color: $blue2;
     }
 
     .faux-block {
@@ -469,3 +469,104 @@ pre.text, pre.sourceCode, .cell-output pre {
         left: 0;
     }
 }
+
+
+// Styling for Research Listing Page (inspired by Heiss)
+.project-list {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2em; // Add some margin at the bottom of the list
+
+    li.project { // Style each project item
+      margin-bottom: 2.5em; // Space between items
+      padding-left: 0.5em; // Indent content slightly
+      // Use a light blue border (adjust $blue2 or $blue3 if you prefer)
+      border-left: 6px solid $blue3; 
+
+      p { // Ensure paragraphs inside don't have extra margin
+        margin-bottom: 0.5em; // Add a little space below reference
+      }
+    }
+  }
+
+  // Adjust padding for the main content area if needed (already have padding on li.project)
+  // .project-content {
+  //   padding-left: 0.5em; 
+  // }
+
+  // Style the categories block
+  .project-categories {
+    margin-top: 0.5em; // Add space above categories
+    padding-left: 0; // Remove default padding if needed
+
+    .project-category {
+      // Style individual category tags as links
+      padding: 0.15em 0.5em; // Add some padding
+      margin-right: 0.5em; // Add space between tags
+      margin-bottom: 0.4em; // Allow wrapping
+      font-size: 0.7em;
+      text-transform: uppercase;
+      border: 1px solid $blue; // Use main blue for border
+      border-radius: 0.25rem; // Rounded corners
+      display: inline-block; // Make them sit side-by-side
+
+      a {
+        text-decoration: none; // Remove underline from category links
+        color: $blue; // Use main blue for link color
+      }
+      a:hover {
+        text-decoration: underline; // Add underline on hover
+        color: $darkpurple; // Use your dark hover color
+      }
+    }
+  }
+
+  // Style the container for the links (PDF, details, etc.)
+  .project-details-listing {
+    margin-top: 0.8em; // Space above the links bar
+    // Use a very light blue background (adjust $blue2 or $blue3)
+    background-color: $blue3; 
+    font-size: 0.9rem; // Adjust font size for links
+    padding-left: 0.5em; // Indent links slightly to align with content
+
+    ul.project-links {
+      margin-bottom: 0; // Remove bottom margin from the inner ul
+      padding-left: 0; // Remove default list padding
+    }
+
+    .project-link { // Style each link item (PDF, Data, etc.)
+      display: inline-block; // Place links side-by-side
+      white-space: nowrap;
+      padding: 0.5em 0.5em 0.5em 0.5em; // Padding around links
+      margin-right: 0.5em; // Space between links
+
+      // Link styling inherited from default $link-color ($blue)
+      i {
+        margin-right: 0.3em; // Space between icon and text
+      }
+    }
+
+    .details { // Special styling for the "Full details" link item
+      // Use your main blue color for the background
+      background-color: $blue; 
+      padding-right: 1em; // Ensure enough space
+      padding-left: 1em;
+      border-radius: 0.25rem; // Add rounded corners
+
+      a { // Style the link text inside the details button
+        color: $white !important; // Make text white (important to override default link color)
+        text-decoration: none !important; 
+      }
+      a:hover {
+        color: $white !important; 
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
+
+// Ensure alignment if using .project-content div (optional, check appearance)
+// .project-list .project-content {
+//   padding-left: 0.5em; // Match li.project padding-left
+// }

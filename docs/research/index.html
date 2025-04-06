@@ -98,6 +98,34 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-preprints .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-website','listing-project','listing-execute','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-website","listing-project","listing-execute","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-preprints'] = new List('listing-preprints', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-posters .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -195,10 +223,6 @@ window.Quarto = {
     <a class="nav-link active" href="../research/index.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../blog/index.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -258,26 +282,105 @@ window.Quarto = {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link active" data-scroll-target="#journal-articles">Journal articles</a></li>
+  <li><a href="#preprints" id="toc-preprints" class="nav-link active" data-scroll-target="#preprints">Preprints</a></li>
+  <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link" data-scroll-target="#journal-articles">Journal articles</a></li>
   <li><a href="#posters" id="toc-posters" class="nav-link" data-scroll-target="#posters">Posters</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Action observation network">Action observation network <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Empathy">Empathy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Linear mixed modeling">Linear mixed modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Longitudinal survey study">Longitudinal survey study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Mindfulness">Mindfulness <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Observational study">Observational study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Perceived stress">Perceived stress <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Random-intercept cross-lagged panel model">Random-intercept cross-lagged panel model <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Structural equation modeling">Structural equation modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fMRI">fMRI <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Action observation network">Action observation network <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Bayesian Updating">Bayesian Updating <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cognitive Control">Cognitive Control <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cognitive Reflection">Cognitive Reflection <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Empathy">Empathy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Linear mixed modeling">Linear mixed modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Longitudinal survey study">Longitudinal survey study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Mindfulness">Mindfulness <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Motivated Reasoning">Motivated Reasoning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Observational study">Observational study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Perceived stress">Perceived stress <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Random-intercept cross-lagged panel model">Random-intercept cross-lagged panel model <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Structural equation modeling">Structural equation modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fMRI">fMRI <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
-<p>Here you can find my published journal articles, some working papers and preprints, and other information about past and current projects. For a full list you may also refer to my <a href="../cv">CV</a>.</p>
+<p>My research spans the fields of cognitive psychology, political science, and neuroscience. Here you can find my published journal articles, preprints, and other information about past and current projects.</p>
 <hr>
+<section id="preprints" class="level2">
+<h2 class="anchored" data-anchor-id="preprints">Preprints</h2>
+<div id="listing-preprints" class="quarto-listing quarto-listing-container-custom">
+<div class="research project-list">
+<ul class="list">
+    
+        <li class="project" data-index="0" data-categories="Motivated Reasoning,Cognitive Control,Cognitive Reflection,Bayesian Updating" data-listing-date-sort="1741129200000" data-listing-file-modified-sort="1743951969430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="266">
+            <div class="project-content listing-pub-info">
+                <p><strong>Borghi, O.</strong>, Tappin, B. M., Smets, K., &amp; Tsakiris, M. (2025, March 5). Mind over bias: How is cognitive control related to politically motivated reasoning?. https://doi.org/10.31234/osf.io/sjfxq_v2</p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Motivated Reasoning">
+                            Motivated Reasoning
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Cognitive Control">
+                            Cognitive Control
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Cognitive Reflection">
+                            Cognitive Reflection
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Bayesian Updating">
+                            Bayesian Updating
+                        </a></div>
+                    
+            </div>
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/preprints/borghi-etal-2025/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="../research/preprints/borghi-etal-2025/borghi-etal-2025-motivated-reasoning.pdf">
+                        
+                            <i class="fa-solid fa-file-pdf"></i> PDF of article
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://doi.org/10.31234/osf.io/sjfxq_v2">
+                        
+                            <i class="fa-solid fa-scroll"></i> Online version
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://osf.io/uztn7/">
+                        
+                            <i class="fa-brands fa-github"></i> Data and code
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
+</ul>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
 <section id="journal-articles" class="level2">
 <h2 class="anchored" data-anchor-id="journal-articles">Journal articles</h2>
 <div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
 <div class="research project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-categories="Mindfulness,Perceived stress,Longitudinal survey study,Random-intercept cross-lagged panel model" data-listing-date-sort="1713218400000" data-listing-file-modified-sort="1743942020917" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
+        <li class="project" data-index="0" data-categories="Mindfulness,Perceived stress,Longitudinal survey study,Random-intercept cross-lagged panel model" data-listing-date-sort="1713218400000" data-listing-file-modified-sort="1743951437219" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
             <div class="project-content listing-pub-info">
                 <p><strong>Borghi, O.</strong>, Voracek, M., &amp; Tran, U. S. (2024). Day-to-day associations between mindfulness and perceived stress: Insights from random intercept cross-lagged panel modeling. Frontiers in Psychology, 15. https://doi.org/10.3389/fpsyg.2024.1272720</p>
             </div>
@@ -342,7 +445,7 @@ window.Quarto = {
             </div>
         </li>
         
-        <li class="project" data-index="1" data-categories="Mindfulness,Empathy,Observational study,Structural equation modeling" data-listing-date-sort="1677193200000" data-listing-file-modified-sort="1743942020915" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="314">
+        <li class="project" data-index="1" data-categories="Mindfulness,Empathy,Observational study,Structural equation modeling" data-listing-date-sort="1677193200000" data-listing-file-modified-sort="1743951422765" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="311">
             <div class="project-content listing-pub-info">
                 <p><strong>Borghi, O.</strong>, Mayrhofer, L., Voracek, M., &amp; Tran, U. S. (2023). Differential associations of the two higher-order factors of mindfulness with trait empathy and the mediating role of emotional awareness. Scientific Reports, 13(1), Article 1. https://doi.org/10.1038/s41598-023-30323-6</p>
             </div>

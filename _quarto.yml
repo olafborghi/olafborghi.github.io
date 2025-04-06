@@ -22,8 +22,8 @@ website:
         href: cv/index.qmd
       - text: "Research"
         href: research/index.qmd
-      - text: "Blog"
-        href: blog/index.qmd
+      # - text: "Blog"
+      #  href: blog/index.qmd
 
     
     # your social media handles

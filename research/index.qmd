@@ -6,6 +6,10 @@ listing:
     sort: "date desc"
     template: ../html/research/listing.ejs
     categories: true
+  - id: preprints
+    contents: "preprints/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
   - id: posters
     contents: "posters/*/index.qmd"
     sort: "date desc"
@@ -15,9 +19,15 @@ include-back-link: false
 toc-location: right
 ---
 
-Here you can find my published journal articles, some working papers and preprints, and other information about past and current projects. For a full list you may also refer to my [CV](../cv).
+My research spans the fields of cognitive psychology, political science, and neuroscience. Here you can find my published journal articles, preprints, and other information about past and current projects. 
 
 ----
+
+## Preprints
+
+:::{#preprints}
+:::
+
 
 ## Journal articles
 
