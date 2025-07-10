@@ -22,7 +22,7 @@ categories:
 
 pub-info:
   reference: >- 
-    <strong>Borghi, O.</strong>, Tappin, B. M., Smets, K., & Tsakiris, M. (2025, March 5). Mind over bias: How is cognitive control related to politically motivated reasoning?. https://doi.org/10.31234/osf.io/sjfxq_v2
+    <strong>Borghi, O.</strong>, Tappin, B. M., Smets, K., & Tsakiris, M. (2025, June 3). Mind over bias: How is cognitive control related to politically motivated reasoning?. https://doi.org/10.31234/osf.io/sjfxq_v3
 
 
   links:
@@ -31,7 +31,7 @@ pub-info:
       icon: fa-solid fa-file-pdf
       local: true
     - name: Online version
-      url: https://doi.org/10.31234/osf.io/sjfxq_v2
+      url: https://doi.org/10.31234/osf.io/sjfxq_v3
       icon: fa-solid fa-scroll
     - name: Data and code
       url: https://osf.io/uztn7/
@@ -39,18 +39,18 @@ pub-info:
       
   extra: >-
     In politics, people are not always truth seekers. Often, we reach conclusions because they fit with preferred political narratives: we are biased by ideological motivations. But are some people better equipped to overcome such bias than others?
-doi: 10.31234/osf.io/sjfxq_v2
+doi: 10.31234/osf.io/sjfxq_v3
 ---
 
 ## Important links
 
-- [Preprint](https://osf.io/preprints/psyarxiv/sjfxq_v2)
+- [Preprint](https://doi.org/10.31234/osf.io/sjfxq_v3)
 - [OSF repository](https://osf.io/uztn7/)
 - [Preregistration](https://osf.io/x6fkm)
 
 ## Abstract
 
-People often favour information aligned with their ideological motives. Can our tendency for directional  motivated  reasoning  be  overcome  with  cognitive  control?  It  remains  contested whether  cognitive  control  processes,  such  as  cognitive  reflection  and  inhibitory  control,  are linked to a greater tendency to engage in politically motivated reasoning, as proposed by the “motivated reflection” hypothesis, or can help people overcome it, as suggested by cognitive science research. In this pre-registered study (N = 504 UK participants ratingn = 4963 news messages), we first provide evidence for motivated reasoning on multiple political and non-political topics. We then compare the relative evidence for these two competing hypotheses and find that for political topics, it is 20 times more likelythat cognitive reflection is associated with  less  motivated  reasoning –in contrast to the prediction from the influential “motivated reflection” hypothesis. Our results highlight the need for more nuanced theories of how different cognitive control processes interact with motivated reasoning. 
+People often favour information aligned with their ideological motives. Can our tendency for directional motivated reasoning be overcome with cognitive control? It remains contested whether cognitive control processes, such as cognitive reflection and inhibitory control, are linked to a greater tendency to engage in politically motivated reasoning, as proposed by the “motivated reflection” hypothesis, or can help people overcome it, as suggested by cognitive science research. In this pre-registered study (N = 504 UK participants rating n = 4963 news messages), we first provide evidence for motivated reasoning on multiple political and non-political topics. We then investigated the associations of the two cognitive control variables cognitive reflection and inhibitory control with motivated reasoning. We find that associations between cognitive control processes and motivated reasoning are likely small. On political topics specifically, we find that a negative association with cognitive reflection is more likely than a positive association. This finding is contrary to predictions from the popular motivated reflection hypothesis. Results for inhibitory control are inconclusive. We discuss how these findings relate to interdisciplinary literature from cognitive and political psychology.  
 
 ## Citation
 
@@ -60,15 +60,14 @@ People often favour information aligned with their ideological motives. Can our 
 	title = {Mind over bias: {How} is cognitive control related to politically motivated reasoning?},
 	copyright = {All rights reserved},
 	shorttitle = {Mind over bias},
-	url = {https://osf.io/sjfxq_v2},
-	doi = {10.31234/osf.io/sjfxq_v2},
+	url = {https://doi.org/10.31234/osf.io/sjfxq_v3},
+	doi = {10.31234/osf.io/sjfxq_v3},
 	language = {en-us},
-	urldate = {2025-04-06},
+	urldate = {2025-06-03},
 	publisher = {OSF},
 	author = {Borghi, Olaf and Tappin, Ben M. and Smets, Kaat and Tsakiris, Manos},
-	month = mar,
+	month = jun,
 	year = {2025},
-	keywords = {Cognitive control, Cognitive reflection, Inhibitory control, Motivated reasoning, Political beliefs, Political bias},
-	file = {OSF Preprint:/Users/olafborghi/Zotero/storage/EDDE3RVJ/Borghi et al. - 2025 - Mind over bias How is cognitive control related to politically motivated reasoning.pdf:application/pdf},
+	keywords = {Cognitive control, Cognitive reflection, Inhibitory control, Motivated reasoning, Political beliefs, Political bias}
 }
 ```
