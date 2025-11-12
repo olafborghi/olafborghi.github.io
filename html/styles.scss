@@ -591,3 +591,30 @@ a.quarto-category:hover {
 // .project-list .project-content {
 //   padding-left: 0.5em; // Match li.project padding-left
 // }
+
+// Prevent zoom issues from embedded PDFs
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+.embed-container {
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+    
+    iframe {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
+
+
