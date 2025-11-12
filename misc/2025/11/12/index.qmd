@@ -1,5 +1,5 @@
 ---
-title: "Datavisualization in the Social and Cognitive Sciences in ggplot2"
+title: "Data Visualization in the Social and Cognitive Sciences in ggplot2"
 author: "Olaf Borghi & Jakob Kasper"
 date: 2025-11-12
 description: "Slides of a data visualization workshop at the IP-PAD MSCA doctoral network training day in Amsterdam in November 2025."
