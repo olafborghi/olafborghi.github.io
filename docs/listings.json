@@ -2,14 +2,18 @@
   {
     "listing": "/research/index.html",
     "items": [
+      "/research/articles/borghi-etal-2026/index.html",
+      "/research/articles/borghi-etal-2025/index.html",
       "/research/articles/borghi-etal-2024/index.html",
       "/research/articles/borghi-etal-2023/index.html",
-      "/research/preprints/borghi-etal-2025/index.html",
-      "/research/posters/borghi-AON-master-thesis/index.html"
+      "/research/posters/borghi-AON-master-thesis/index.html",
+      "/research/posters/borghi-future-anxiety-IP-PAD/index.html"
     ]
   },
   {
-    "listing": "/blog/index.html",
-    "items": []
+    "listing": "/misc/index.html",
+    "items": [
+      "/misc/2025/11/12/index.html"
+    ]
   }
 ]

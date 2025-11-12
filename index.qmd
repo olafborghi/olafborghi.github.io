@@ -19,6 +19,7 @@ about:
       text: Email
       href: "mailto:olaf.borghi@rhul.ac.uk"  
 engine: knitr
+freeze: false
 ---
 
 ```{css, echo=FALSE}
@@ -32,18 +33,23 @@ engine: knitr
 
 ### Olaf Borghi, MSc
 
+I am a doctoral candidate in the Marie-Curie network “[Interdisciplinary Perspectives of the Politics of Adolescence & Democracy](https://www.ippad.eu)” based at the Centre for the Politics of Feelings (Royal Holloway, University of London).
 
-I am a doctoral candidate in the Marie-Curie network“[Interdisciplinary Perspectives of the Politics of Adolescence & Democracy](www.ippad.eu)” based at the Centre for the Politics of Feelings (Royal Holloway, University of London).
+In my PhD, I investigate how political beliefs and attitudes develop, and the cognitive and emotional factors underlying this development. The developmental focus of my research works in two ways. First, I focus on adolescence and young adulthood – times of cognitive, emotional, and political change. Second, I study processes of belief development, examining how people incorporate new information based on their existing political stances, and different biases that affect political belief formation and updating. I also have a research focus on how young people feel about and imagine their future in times of multiple crises, and how this relates to their political views.
 
-In my PhD, I investigate how political beliefs and attitudes develop, and the cognitive and emotional factors underlying this development. The developmental focus of my research works in two ways. First, I focus on adolescence and young adulthood – times of cognitive, emotional, and political change. Second, I study processes of belief development, examining how people incorporate new information based on their existing political stances, and different biases that affect political belief formation and updating. I also have a particular research interest into how young people feel about and imagine their future in times of multiple crises, and how this relates to their political attitudes. 
+If you are interested about my work, would like to chat or collaborate, [contact me](mailto:olaf.borghi@rhul.ac.uk)!
 
-If you are interested about my work, would like to chat or collaborate, do not hesitate to [contact me](mailto:olaf.borghi@rhul.ac.uk)! 
- 
+#### Recent News
 
-**Methodological interests and open science**
+**Nov 2025** Our most recent paper, "Mind over bias: How is cognitive control related to politically motivated reasoning?", has just been published in *Cognition*! \
+You can read more here: [**Borghi et al. (2026)**](research/articles/borghi-etal-2026/)
 
-My work has a strong methodological and interdisciplinary focus. I combine quantitative methods and tools from cognitive psychology, political science, and neuroscience, including Bayesian modelling, survey experiments, and functional magnetic resonance imaging (fMRI). I also place a strong emphasis on open science, and commit to sharing all data and materials openly. 
+**Oct 2025** The first paper of my PhD, "Facing a dark future: Young people’s future anxiety and political attitudes in the UK and Greece" has been published in a special issue on the Psychology of Pushback in *Advances.in/Psychology*. \
+You can read more here: [**Borghi et al. (2025)**](research/articles/borghi-etal-2025/)
 
+#### Methodological interests and open science
+
+My work has a strong methodological and interdisciplinary focus. I combine quantitative methods and tools from across the social, developmental, and cognitive sciences, including cognitive tasks, survey experiments, text analysis, and cognitive modelling. I also place a strong emphasis on open science, and commit to openly sharing data and materials for all my papers.
 
 ```{=html}
 <div  style="margin: 30px; text-align: center;">

@@ -23,17 +23,15 @@ My research spans the fields of cognitive psychology, political science, and neu
 
 ----
 
-## Preprints
-
-:::{#preprints}
-:::
-
-
 ## Journal articles
 
 :::{#articles}
 :::
 
+## Preprints
+
+:::{#preprints}
+:::
 
 ## Posters
 

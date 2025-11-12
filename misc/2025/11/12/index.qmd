@@ -1,0 +1,47 @@
+---
+title: "Datavisualization in the Social and Cognitive Sciences in ggplot2"
+author: "Olaf Borghi & Jakob Kasper"
+date: 2025-11-12
+description: "Slides of a data visualization workshop at the IP-PAD MSCA doctoral network training day in Amsterdam in November 2025."
+categories:
+  - r
+  - ggplot2
+  - datavis
+  - IP-PAD
+  - workshop
+title-block-banner: "#5AB2FF"
+engine: knitr
+freeze: false
+slides:
+  pdf: "datavis.pdf"
+---
+
+```{css echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+```
+
+```{=html}
+<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="`r rmarkdown::metadata$slides$pdf`" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download Slides
+  </a>
+</p>
+<div class="embed-container">
+  <iframe src="`r rmarkdown::metadata$slides$pdf`#toolbar=0" style="border: 0.5px;width: 100%;"></iframe>
+</div>
+```

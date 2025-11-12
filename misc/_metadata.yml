@@ -1,0 +1,31 @@
+# Date format
+date-format: "dddd, MMMM D, YYYY"
+
+# Enable banner style title blocks
+title-block-banner: "#5AB2FF"
+
+# Add blog-post class to the banner header area
+format: 
+  html:
+    code-tools: true
+    quarto-template-params:
+      banner-header-class: "blog-post"
+
+# Default for table of contents
+toc: true
+toc-title: Contents
+toc-location: left
+
+freeze: false
+
+# Default knitr options
+execute:
+  echo: true
+  message: true
+  warning: true
+
+# Default author
+author:
+  - name: Olaf Borghi
+    url: https://www.olafborghi.com/
+    orcid: 0000-0001-9724-2839

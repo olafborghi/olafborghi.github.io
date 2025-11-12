@@ -105,9 +105,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-website','listing-project','listing-execute','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-website","listing-project","listing-execute","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -223,10 +223,19 @@ window.Quarto = {
     <a class="nav-link active" href="../research/index.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../misc/index.html"> 
+<span class="menu-text">Misc</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.olafborghi.com"> <i class="bi bi-folder-symlink" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/olaf-borghi-864276280/"> <i class="bi bi-linkedin" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -282,12 +291,12 @@ window.Quarto = {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#preprints" id="toc-preprints" class="nav-link active" data-scroll-target="#preprints">Preprints</a></li>
-  <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link" data-scroll-target="#journal-articles">Journal articles</a></li>
+  <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link active" data-scroll-target="#journal-articles">Journal articles</a></li>
+  <li><a href="#preprints" id="toc-preprints" class="nav-link" data-scroll-target="#preprints">Preprints</a></li>
   <li><a href="#posters" id="toc-posters" class="nav-link" data-scroll-target="#posters">Posters</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Action observation network">Action observation network <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Bayesian Updating">Bayesian Updating <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cognitive Control">Cognitive Control <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cognitive Reflection">Cognitive Reflection <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Empathy">Empathy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Linear mixed modeling">Linear mixed modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Longitudinal survey study">Longitudinal survey study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Mindfulness">Mindfulness <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Motivated Reasoning">Motivated Reasoning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Observational study">Observational study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Perceived stress">Perceived stress <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Random-intercept cross-lagged panel model">Random-intercept cross-lagged panel model <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Structural equation modeling">Structural equation modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fMRI">fMRI <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Action observation network">Action observation network <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Bayesian Updating">Bayesian Updating <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Cognitive Control">Cognitive Control <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Cognitive Reflection">Cognitive Reflection <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Empathy">Empathy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Future anxiety">Future anxiety <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Greece">Greece <span class="quarto-category-count">(1)</span></div><div class="category" data-category="IP-PAD">IP-PAD <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Linear mixed modeling">Linear mixed modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Longitudinal survey study">Longitudinal survey study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Mindfulness">Mindfulness <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Motivated Reasoning">Motivated Reasoning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Observational study">Observational study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Perceived stress">Perceived stress <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Politics">Politics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Random-intercept cross-lagged panel model">Random-intercept cross-lagged panel model <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Structural equation modeling">Structural equation modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UK">UK <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Young people's politics">Young people's politics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fMRI">fMRI <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -296,15 +305,15 @@ window.Quarto = {
 
 <p>My research spans the fields of cognitive psychology, political science, and neuroscience. Here you can find my published journal articles, preprints, and other information about past and current projects.</p>
 <hr>
-<section id="preprints" class="level2">
-<h2 class="anchored" data-anchor-id="preprints">Preprints</h2>
-<div id="listing-preprints" class="quarto-listing quarto-listing-container-custom">
+<section id="journal-articles" class="level2">
+<h2 class="anchored" data-anchor-id="journal-articles">Journal articles</h2>
+<div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
 <div class="research project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-categories="Motivated Reasoning,Cognitive Control,Cognitive Reflection,Bayesian Updating" data-listing-date-sort="1741132800000" data-listing-file-modified-sort="1752139236437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
+        <li class="project" data-index="0" data-categories="Motivated Reasoning,Cognitive Control,Cognitive Reflection,Bayesian Updating" data-listing-date-sort="1767225600000" data-listing-file-modified-sort="1762963673537" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="256">
             <div class="project-content listing-pub-info">
-                <p><strong>Borghi, O.</strong>, Tappin, B. M., Smets, K., &amp; Tsakiris, M. (2025, June 3). Mind over bias: How is cognitive control related to politically motivated reasoning?. https://doi.org/10.31234/osf.io/sjfxq_v3</p>
+                <p><strong>Borghi, O.</strong>, Tappin, B. M., Smets, K., &amp; Tsakiris, M. (2026). Mind over bias: How is cognitive control related to politically motivated reasoning? Cognition, 268, 106373. https://doi.org/10.1016/j.cognition.2025.106373</p>
             </div>
 
             
@@ -332,7 +341,7 @@ window.Quarto = {
             <div class="project-details-listing">
                 <ul class="project-links">
                     <li class="project-link details">
-                        <a href="../research/preprints/borghi-etal-2025/index.html" class="listing-name">
+                        <a href="../research/articles/borghi-etal-2026/index.html" class="listing-name">
                             <i class="fa-solid fa-circle-info"></i> Full details »
                         </a>
                     </li>
@@ -340,7 +349,7 @@ window.Quarto = {
                         
                     <li class="project-link">
                         
-                        <a href="../research/preprints/borghi-etal-2025/borghi-etal-2025-motivated-reasoning.pdf">
+                        <a href="../research/articles/borghi-etal-2026/borghi-etal-2026-motivated-reasoning.pdf">
                         
                             <i class="fa-solid fa-file-pdf"></i> PDF of article
                         </a>
@@ -348,7 +357,7 @@ window.Quarto = {
                         
                     <li class="project-link">
                         
-                        <a href="https://doi.org/10.31234/osf.io/sjfxq_v3">
+                        <a href="https://authors.elsevier.com/sd/article/S0010-0277(25)00314-2">
                         
                             <i class="fa-solid fa-scroll"></i> Online version
                         </a>
@@ -367,20 +376,72 @@ window.Quarto = {
             </div>
         </li>
         
-</ul>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="journal-articles" class="level2">
-<h2 class="anchored" data-anchor-id="journal-articles">Journal articles</h2>
-<div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
-<div class="research project-list">
-<ul class="list">
-    
-        <li class="project" data-index="0" data-categories="Mindfulness,Perceived stress,Longitudinal survey study,Random-intercept cross-lagged panel model" data-listing-date-sort="1713222000000" data-listing-file-modified-sort="1752138946467" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
+        <li class="project" data-index="1" data-categories="Motivated Reasoning,Cognitive Control,Cognitive Reflection,Bayesian Updating" data-listing-date-sort="1760050800000" data-listing-file-modified-sort="1762963779371" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
+            <div class="project-content listing-pub-info">
+                <p><strong>Borghi, O.</strong>, Niraki, M., Seremeta, E., Smets, K., &amp; Tsakiris, M. (2025). Facing a dark future: Young people’s future anxiety and political attitudes in the UK and Greece. Advances.in/Psychology, 2, e555124. https://doi.org/10.56296/aip00042</p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Motivated Reasoning">
+                            Motivated Reasoning
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Cognitive Control">
+                            Cognitive Control
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Cognitive Reflection">
+                            Cognitive Reflection
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Bayesian Updating">
+                            Bayesian Updating
+                        </a></div>
+                    
+            </div>
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/articles/borghi-etal-2025/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="../research/articles/borghi-etal-2025/borghi-etal-2025-dark-future.pdf">
+                        
+                            <i class="fa-solid fa-file-pdf"></i> PDF of article
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://advances.in/psychology/10.56296/aip00042/">
+                        
+                            <i class="fa-solid fa-scroll"></i> Online version
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://osf.io/d27rk/">
+                        
+                            <i class="fa-brands fa-github"></i> Data and code
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li class="project" data-index="2" data-categories="Mindfulness,Perceived stress,Longitudinal survey study,Random-intercept cross-lagged panel model" data-listing-date-sort="1713222000000" data-listing-file-modified-sort="1762961868261" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
             <div class="project-content listing-pub-info">
                 <p><strong>Borghi, O.</strong>, Voracek, M., &amp; Tran, U. S. (2024). Day-to-day associations between mindfulness and perceived stress: Insights from random intercept cross-lagged panel modeling. Frontiers in Psychology, 15. https://doi.org/10.3389/fpsyg.2024.1272720</p>
             </div>
@@ -445,7 +506,7 @@ No matching items
             </div>
         </li>
         
-        <li class="project" data-index="1" data-categories="Mindfulness,Empathy,Observational study,Structural equation modeling" data-listing-date-sort="1677196800000" data-listing-file-modified-sort="1752138946465" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="311">
+        <li class="project" data-index="3" data-categories="Mindfulness,Empathy,Observational study,Structural equation modeling" data-listing-date-sort="1677196800000" data-listing-file-modified-sort="1762961868259" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="311">
             <div class="project-content listing-pub-info">
                 <p><strong>Borghi, O.</strong>, Mayrhofer, L., Voracek, M., &amp; Tran, U. S. (2023). Differential associations of the two higher-order factors of mindfulness with trait empathy and the mediating role of emotional awareness. Scientific Reports, 13(1), Article 1. https://doi.org/10.1038/s41598-023-30323-6</p>
             </div>
@@ -517,13 +578,26 @@ No matching items
 </div>
 </div>
 </section>
+<section id="preprints" class="level2">
+<h2 class="anchored" data-anchor-id="preprints">Preprints</h2>
+<div id="listing-preprints" class="quarto-listing quarto-listing-container-custom">
+<div class="research project-list">
+<ul class="list">
+    
+</ul>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
 <section id="posters" class="level2">
 <h2 class="anchored" data-anchor-id="posters">Posters</h2>
 <div id="listing-posters" class="quarto-listing quarto-listing-container-custom">
 <div class="research project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-categories="fMRI,Action observation network,Linear mixed modeling" data-listing-file-modified-sort="1752138946475" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
+        <li class="project" data-index="0" data-categories="fMRI,Action observation network,Linear mixed modeling" data-listing-file-modified-sort="1762961868271" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
             <div class="project-content listing-pub-info">
                 <p>Poster of my master thesis.</p>
             </div>
@@ -568,6 +642,71 @@ No matching items
                         <a href="https://github.com/olafborghi/AON_ACTION">
                         
                             <i class="fa-brands fa-github"></i> Data and code
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li class="project" data-index="1" data-categories="Future anxiety,Young people" s="" politics,ip-pad,uk,greece,politics'="" data-listing-file-modified-sort="1762964384455" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
+            <div class="project-content listing-pub-info">
+                <p>Poster presentation at IP-PAD Amsterdam Meeting Conference Day.</p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Future anxiety">
+                            Future anxiety
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Young people's politics">
+                            Young people's politics
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=IP-PAD">
+                            IP-PAD
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=UK">
+                            UK
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Greece">
+                            Greece
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Politics">
+                            Politics
+                        </a></div>
+                    
+            </div>
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/posters/borghi-future-anxiety-IP-PAD/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="../research/posters/borghi-future-anxiety-IP-PAD/Borghi_FA_Poster.pdf">
+                        
+                            <i class="fa-solid fa-file-pdf"></i> PDF of poster
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://advances.in/psychology/10.56296/aip00042/">
+                        
+                            <i class="fa-brands fa-github"></i> Paper
                         </a>
                     </li>
                         
@@ -1015,7 +1154,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p><span class="faux-block">© 2025 Olaf Borghi CC BY 4.0</span></p>
 </div>   
     <div class="nav-footer-center">
-<p><span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">Includes code by Marvin Schmitt and Andrew Heiss CC BY 4.0.</a></span></p>
+<p><span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">Based on code by M. Schmitt and A. Heiss CC BY 4.0.</a></span></p>
 </div>
     <div class="nav-footer-right">
 <p><span class="faux-block"><a href="https://github.com/olafborghi/olafborghi.github.io/">View source on GitHub</a></span></p>

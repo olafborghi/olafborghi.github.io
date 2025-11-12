@@ -1,0 +1,31 @@
+---
+title: "Facing a dark future: Young people’s future anxiety and political attitudes"
+author:
+  - name: Olaf Borghi
+    orcid: 0000-0001-9724-2839
+    affiliation: Royal Holloway, University of London
+categories: 
+  - Future anxiety
+  - Young people's politics
+  - IP-PAD
+  - UK
+  - Greece
+  - Politics
+pub-info:
+  reference: >- 
+    Poster presentation at IP-PAD Amsterdam Meeting Conference Day. 
+  links:
+    - name: PDF of poster
+      url: Borghi_FA_Poster.pdf
+      icon: fa-solid fa-file-pdf
+      local: true
+    - name: Paper
+      url: https://advances.in/psychology/10.56296/aip00042/
+      icon: fa-brands fa-github
+  extra: >-
+    How is future anxiety associated with young people's political views?
+---
+
+Poster of the first chapter of my PhD thesis, published in a special issue on the "Psychology of Pushback" in Advances.in/Psychology
+
+<br/><img src='Borghi_FA_Poster.png' style="width: 100%;">

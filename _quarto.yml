@@ -22,15 +22,16 @@ website:
         href: cv/index.qmd
       - text: "Research"
         href: research/index.qmd
-      # - text: "Blog"
-      #  href: blog/index.qmd
+      - text: "Misc"
+        href: misc/index.qmd
 
     
     # your social media handles
     right:
       - icon: folder-symlink
         href: https://www.olafborghi.com
-        
+      - icon: linkedin
+        href: https://www.linkedin.com/in/olaf-borghi-864276280/        
       - icon: twitter
         href: https://bsky.app/profile/olafborghi.com
       - icon: github
@@ -50,7 +51,7 @@ website:
     left: |
       <span class="faux-block">&#169; 2025 Olaf Borghi CC BY 4.0</span>
     center: |
-      <span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">Includes code by Marvin Schmitt and Andrew Heiss CC BY 4.0.</a></span>
+      <span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">Based on code by M. Schmitt and A. Heiss CC BY 4.0.</a></span>
     right: |
       <span class="faux-block"><a href="https://github.com/olafborghi/olafborghi.github.io/">View source on GitHub</a></span>
 

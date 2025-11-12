@@ -1,0 +1,77 @@
+---
+title: "Facing a dark future: Young people’s future anxiety and political attitudes in the UK and Greece"
+date: 2025-10-10
+author:
+  - name: Olaf Borghi
+    orcid: 0000-0001-9724-2839
+    affiliation: Royal Holloway, University of London
+  - name: Melina Niraki
+    orcid: 0009-0004-8667-1266 
+    affiliation: Panteion University of Social and Political Sciences
+  - name: Ermioni Seremeta
+    orcid: 0009-0009-9103-337X  
+    affiliation: Panteion University of Social and Political Sciences
+  - name: Kaat Smets
+    orcid: 0000-0003-4013-6255
+    affiliation: Royal Holloway, University of London
+  - name: Manos Tsakiris
+    orcid: 0000-0003-4013-6255
+    affiliation: Royal Holloway, University of London
+categories: 
+  - Motivated Reasoning
+  - Cognitive Control
+  - Cognitive Reflection
+  - Bayesian Updating
+
+pub-info:
+  reference: >- 
+    <strong>Borghi, O.</strong>, Niraki, M., Seremeta, E., Smets, K., & Tsakiris, M. (2025). Facing a dark future: Young people’s future anxiety and political attitudes in the UK and Greece. Advances.in/Psychology, 2, e555124. https://doi.org/10.56296/aip00042
+
+
+  links:
+    - name: PDF of article
+      url: borghi-etal-2025-dark-future.pdf
+      icon: fa-solid fa-file-pdf
+      local: true
+    - name: Online version
+      url: https://advances.in/psychology/10.56296/aip00042/
+      icon: fa-solid fa-scroll
+    - name: Data and code
+      url: https://osf.io/d27rk/
+      icon: fa-brands fa-github
+      
+  extra: >-
+    Young people grow up in times of multiple crises—from the aftermath of Covid-19, economic turmoil, to the outlook of climate change. Reports indicate that many young people feel anxious about their future. But how is future anxiety associated with young people's political views?
+doi: 10.31234/osf.io/sjfxq_v3
+---
+
+## Important links
+
+-   [Paper](https://advances.in/psychology/10.56296/aip00042/)
+-   [OSF repository](https://osf.io/d27rk/)
+-   [Preregistration](https://osf.io/u7a5q)
+
+## Abstract
+
+Amidst multiple crises, converging reports indicate that young people are anxious about the future. Yet, how future anxiety relates to young people's political attitudes and actively open-minded thinking remains unknown, presenting a critical research gap in times of democratic backsliding and political polarisation. In this study, we provide first empirical insights into the associations between future anxiety, political attitudes, and actively open-minded thinking among young people, considering the moderating role of emotion regulation strategies that could affect how future anxiety is cognitively processed and thus alter its implications. Our pre-registered analyses used original cross-sectional data from an online survey of N = 988 UK adolescents (aged 16-21), with additional conceptual replications in data from N = 997 Greek adolescents that included a subset of the measures from the primary UK sample. Results indicate that future anxiety is most strongly associated with stronger support for democratic principles in our UK sample, an association weaker among adolescents high in cognitive reappraisal. In both the UK and Greece, future anxiety was also associated with higher political participation. Follow-up analyses revealed notable gender differences: only among young men future anxiety was associated with more right-conservative ideological self-classification, a pattern replicated across both countries. These cross-sectional findings provide an important empirical foundation for research on the psychological contributors to and consequences of democratic backsliding and the development of political attitudes in times of multiple crises.
+
+## Citation
+
+``` bibtex
+
+@article{borghietal_2025a,
+  title = {Facing a Dark Future: {{Young}} People's Future Anxiety and Political Attitudes in the {{UK}} and {{Greece}}},
+  shorttitle = {Facing a Dark Future},
+  author = {Borghi, Olaf and Niraki, Melina and Seremeta, Ermioni and Smets, Kaat and Tsakiris, Manos},
+  year = 2025,
+  month = oct,
+  journal = {advances.in/psychology},
+  volume = {2},
+  pages = {e555124},
+  publisher = {Advances.in},
+  issn = {2976-937X},
+  doi = {10.56296/aip00042},
+  copyright = {All rights reserved},
+  langid = {english}
+}
+```

@@ -10,7 +10,6 @@ freeze: false
     display: none;
 }
 ```
----
 
 I was born and grew up in South Tyrol, a small multilingual region in Northern Italy. 
 

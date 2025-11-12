@@ -194,6 +194,22 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 }
 
+// Custom Category Pill Colors 
+a.quarto-category {
+  background-color: $light-orange;
+  color: #000000;
+  border: 1px solid $light-orange;
+  border-radius: 4px; 
+  padding: 3px 8px; 
+}
+
+a.quarto-category:hover {
+  background-color: darken($light-orange, 10%);
+  color: #000000;
+  border: 1px solid darken($light-orange, 10%);
+}
+
+
 .nav-footer {
     align-items: flex-start;  // Align all flex items to the top
     flex-wrap: wrap;
@@ -356,9 +372,11 @@ pre.text, pre.sourceCode, .cell-output pre {
         margin-top: 1.5em;
 
         .quarto-category {
-            background-color: shift-color($purple, -25%);
-            border-color: shift-color($purple, -45%);
-            color: $white;
+            background-color: $light-orange;
+            color: #000000;
+            border: 1px solid $light-orange;
+            border-radius: 4px; 
+            padding: 3px 8px; 
             font-size: 0.65em;
             opacity: 1;
         }
@@ -423,8 +441,11 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
     
     .quarto-title .quarto-categories .quarto-category {
-        background-color: shift-color($red, -75%);
-        color: $red;
+        background-color: $light-orange;
+        color: #000000;
+        border: 1px solid $light-orange;
+        border-radius: 4px; 
+        padding: 3px 8px; 
         font-size: 0.65em;
         opacity: 1;
     }
