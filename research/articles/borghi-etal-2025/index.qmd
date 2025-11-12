@@ -18,10 +18,11 @@ author:
     orcid: 0000-0003-4013-6255
     affiliation: Royal Holloway, University of London
 categories: 
-  - Motivated Reasoning
-  - Cognitive Control
-  - Cognitive Reflection
-  - Bayesian Updating
+  - adolescence
+  - emotion regulation
+  - future anxiety
+  - ideology
+  - political attitudes
 
 pub-info:
   reference: >- 
