@@ -4,6 +4,7 @@ author:
   - name: Olaf Borghi
     orcid: 0000-0001-9724-2839
     affiliation: Royal Holloway, University of London
+date: 2025-11-01
 categories: 
   - Future anxiety
   - Young people's politics
