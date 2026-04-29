@@ -107,27 +107,6 @@ body {
 }
 
 
-.home {
-    .quarto-title-banner {
-        margin-bottom: 0;
-    }
-}
-
-#title-block-header {
-    &.home {
-        margin-block-end: 0.5rem;
-    }
-}
-
-.home {
-    .quarto-title-banner {
-        margin-bottom: 0;
-    }
-
-    #title-block-header {
-        margin-block-end: 0;
-    }
-}
 
 // Shrink blocks of code
 pre.text, pre.sourceCode, .cell-output pre {
@@ -597,6 +576,79 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
+}
+
+// Home page hero
+.home-hero {
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+    padding: 2em 0 0.5em;
+    margin-bottom: 0;
+
+    .hero-logo {
+        height: 7em;
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-name {
+        font-family: $headings-font-family;
+        font-weight: 700;
+        color: $gray-900;
+        font-size: 1.8em;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-family: $headings-font-family;
+        font-weight: 600;
+        color: $gray-600;
+        font-size: 1.05em;
+        margin-top: 0.25em;
+        margin-bottom: 0;
+    }
+}
+
+// Recent news section
+.news-section {
+    margin: 0.5em 0 1.5em;
+
+    .news-item {
+        display: flex;
+        gap: 1.2em;
+        padding: 0.85em 0;
+        border-bottom: 1px solid $gray-200;
+
+        &:first-child {
+            border-top: 1px solid $gray-200;
+        }
+
+        .news-date {
+            font-family: $headings-font-family;
+            font-weight: 600;
+            color: $blue1;
+            font-size: 0.82em;
+            min-width: 5em;
+            padding-top: 0.15em;
+            flex-shrink: 0;
+            letter-spacing: 0.02em;
+        }
+
+        .news-text {
+            font-size: 0.95em;
+            line-height: 1.55;
+            margin: 0;
+            color: $gray-800;
+        }
+    }
 }
 
 body {

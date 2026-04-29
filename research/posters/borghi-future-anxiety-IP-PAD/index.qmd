@@ -22,7 +22,7 @@ pub-info:
       local: true
     - name: Paper
       url: https://advances.in/psychology/10.56296/aip00042/
-      icon: fa-brands fa-github
+      icon: fa-solid fa-scroll
   extra: >-
     How is future anxiety associated with young people's political views?
 ---

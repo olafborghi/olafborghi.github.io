@@ -12,9 +12,9 @@ author:
     orcid: 0000-0001-6109-6155
     affiliation: University of Vienna
   - name: Ulrich S. Tran
-    orcid: 0000-0001-6109-6155
+    orcid: 0000-0002-6589-3167
     affiliation: University of Vienna
-categories: 
+categories:
   - Mindfulness
   - Empathy
   - Observational study

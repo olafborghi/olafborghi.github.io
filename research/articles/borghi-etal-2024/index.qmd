@@ -9,7 +9,7 @@ author:
     orcid: 0000-0001-6109-6155
     affiliation: University of Vienna
   - name: Ulrich S. Tran
-    orcid: 0000-0001-6109-6155
+    orcid: 0000-0002-6589-3167
     affiliation: University of Vienna
 categories: 
   - Mindfulness
@@ -35,7 +35,7 @@ pub-info:
       
   extra: >-
     Mindfulness is often discussed as an important protective factor in the face of stress. But what if it is not higher mindfulness that leads to lower perceived stress, but in turn, stress levels influence our mindfulness? This is what we investigated in this paper. 
-doi: 10.1038/s41598-023-30323-6
+doi: 10.3389/fpsyg.2024.1272720
 ---
 
 ## Important links
