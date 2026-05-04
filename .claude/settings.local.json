@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(quarto --version)",
+      "Bash(quarto render *)",
+      "Bash(quarto preview *)",
+      "Bash(open http://localhost:22222)"
+    ]
+  }
+}

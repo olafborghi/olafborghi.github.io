@@ -98,29 +98,103 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..
     @import url($web-font-path);
 }
 
+// ─── Global base ─────────────────────────────────────────────────────────────
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
+    line-height: 1.68;
+}
+
+::selection {
+    background-color: rgba($blue1, 0.28);
+    color: $gray-900;
+}
+
+// Smooth all link color transitions
+a {
+    transition: color 0.18s ease;
 }
 
 .rtl {
     direction: rtl;
 }
 
+// ─── Shrink blocks of code ───────────────────────────────────────────────────
 
-
-// Shrink blocks of code
 pre.text, pre.sourceCode, .cell-output pre {
     font-size: 0.775em;
 }
 
+// ─── Navbar ──────────────────────────────────────────────────────────────────
+
 .navbar {
     font-family: $navbar-font-family;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.13);
+
+    // Animated underline on text nav links
+    .navbar-nav .nav-link {
+        position: relative;
+        padding-bottom: 0.3em;
+        transition: color 0.18s ease, opacity 0.18s ease;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0.45rem;
+            right: 0.45rem;
+            height: 2px;
+            background-color: $light-orange;
+            border-radius: 1px;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.22s ease;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
+    }
+
+    // Social icon links — subtle lift on hover
+    .navbar-nav .nav-link .bi {
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .navbar-nav .nav-link:hover .bi {
+        transform: translateY(-1px);
+        opacity: 0.82;
+    }
 }
 
 // Put all the icons in a single row in the hamburger menu
 .navbar-nav.navbar-nav-scroll.ms-auto {
     flex-direction: row;
 }
+
+// ─── Content typography ───────────────────────────────────────────────────────
+
+// Section h2 headings get a refined bottom rule to separate sections clearly
+main h2 {
+    letter-spacing: -0.015em;
+    padding-bottom: 0.45em;
+    border-bottom: 1.5px solid $gray-200;
+    margin-top: 1.9em;
+    margin-bottom: 0.85em;
+}
+
+main h3, main h4 {
+    letter-spacing: -0.01em;
+}
+
+// ─── TOC ─────────────────────────────────────────────────────────────────────
 
 #TOC {
     font-family: $toc-font-family;
@@ -141,7 +215,8 @@ pre.text, pre.sourceCode, .cell-output pre {
     padding-bottom: 0.25rem;
 }
 
-// Blog categories
+// ─── Blog categories sidebar ──────────────────────────────────────────────────
+
 #quarto-margin-sidebar {
     .quarto-listing-category-title {
         margin-left: 0.5em;
@@ -173,31 +248,43 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 }
 
-// Custom Category Pill Colors 
+// ─── Category pills ───────────────────────────────────────────────────────────
+
 a.quarto-category {
-  background-color: $light-orange;
-  color: #000000;
-  border: 1px solid $light-orange;
-  border-radius: 4px; 
-  padding: 3px 8px; 
+    background-color: $light-orange;
+    color: #000000;
+    border: 1px solid $light-orange;
+    border-radius: 4px;
+    padding: 3px 8px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 a.quarto-category:hover {
-  background-color: darken($light-orange, 10%);
-  color: #000000;
-  border: 1px solid darken($light-orange, 10%);
+    background-color: darken($light-orange, 10%);
+    color: #000000;
+    border: 1px solid darken($light-orange, 10%);
 }
 
+// ─── Footer ───────────────────────────────────────────────────────────────────
 
 .nav-footer {
-    align-items: flex-start;  // Align all flex items to the top
+    align-items: flex-start;
     flex-wrap: wrap;
     border: 0 !important;
+    border-top: 1px solid rgba($white, 0.08) !important;
     min-height: 3em;
     font-family: $footer-font-family;
+    font-size: 0.875em;
+    letter-spacing: 0.01em;
 
     a {
         color: $blue2;
+        transition: color 0.18s ease;
+
+        &:hover {
+            color: $blue3;
+            text-decoration: none;
+        }
     }
 
     .faux-block {
@@ -210,9 +297,6 @@ a.quarto-category:hover {
         font-size: 0.8em;
     }
 
-    // In the default Quarto template, .nav-footer-center has position: absolute 
-    // turned on, which makes the div not be a flex item
-    // This changes that so that it *is* a flex item
     .nav-footer-center {
         text-align: center;
         position: inherit;
@@ -224,8 +308,6 @@ a.quarto-category:hover {
         }
     }
 
-    // When the screen is medium or smaller, make each footer chunk be 100% width 
-    // and centered; otherwise make them be 33% width and left/right/centerd
     .nav-footer-left,
     .nav-footer-right,
     .nav-footer-center {
@@ -251,10 +333,12 @@ a.quarto-category:hover {
     }
 }
 
+// ─── Title block ──────────────────────────────────────────────────────────────
+
 #title-block-header {
     .quarto-title-banner {
         font-family: $headings-font-family;
-        
+
         .description {
             font-size: 1.1em;
             margin-top: 1em !important;
@@ -262,7 +346,8 @@ a.quarto-category:hover {
     }
 }
 
-// Blog
+// ─── Blog listing ─────────────────────────────────────────────────────────────
+
 .blog {
     .blog-entry {
         display: flex;
@@ -287,6 +372,7 @@ a.quarto-category:hover {
                 width: 100%;
                 object-fit: cover;
                 max-height: 120px;
+                border-radius: 0.25rem;
             }
         }
 
@@ -319,32 +405,41 @@ a.quarto-category:hover {
 
             .post-category {
                 color: $gray-600;
-                border: 1px solid $gray-500;
+                border: 1px solid $gray-400;
                 border-radius: 0.25rem;
                 text-transform: uppercase;
                 font-size: 0.65em;
+                letter-spacing: 0.04em;
                 padding: 0.15em 0.5em;
                 cursor: pointer;
+                transition: color 0.18s ease, border-color 0.18s ease;
+
+                &:hover {
+                    color: $gray-900;
+                    border-color: $gray-700;
+                }
             }
         }
-               
+
         .post-doi {
             font-weight: 300;
             font-size: 0.85em;
             margin: 0.5em 0;
             text-align: right;
-            
+
             .doi-icon {
                 width: 1.1em;
                 padding-bottom: 1px;
             }
-            
+
             a {
                 color: $gray-600;
             }
         }
     }
 }
+
+// ─── Blog post page ───────────────────────────────────────────────────────────
 
 .blog-post {
     .quarto-title .quarto-categories {
@@ -354,17 +449,17 @@ a.quarto-category:hover {
             background-color: $light-orange;
             color: #000000;
             border: 1px solid $light-orange;
-            border-radius: 4px; 
-            padding: 3px 8px; 
+            border-radius: 4px;
+            padding: 3px 8px;
             font-size: 0.65em;
             opacity: 1;
         }
     }
-    
+
     .quarto-title-author-orcid img {
         margin-bottom: -3px;
     }
-    
+
     .quarto-title-meta-contents .doi::before {
         content: "";
         background-image: url(/files/doi.svg);
@@ -376,8 +471,8 @@ a.quarto-category:hover {
     }
 }
 
+// ─── Research detail page ─────────────────────────────────────────────────────
 
-// Research
 .quarto-title-block {
 
     .quarto-title .quarto-categories {
@@ -390,6 +485,7 @@ a.quarto-category:hover {
         background-color: rgba($red, 0.1);
         padding: 0.75em;
         margin: 1em 0;
+        border-radius: 0.25rem;
     }
 
     .quarto-title-meta-heading.manual {
@@ -407,7 +503,6 @@ a.quarto-category:hover {
         padding: 0 1em 0 0;
         font-weight: bold;
     }
-
 }
 
 .back-nav {
@@ -418,13 +513,13 @@ a.quarto-category:hover {
     .back-nav a {
         color: shift-color($red, -50%);
     }
-    
+
     .quarto-title .quarto-categories .quarto-category {
         background-color: $light-orange;
         color: #000000;
         border: 1px solid $light-orange;
-        border-radius: 4px; 
-        padding: 3px 8px; 
+        border-radius: 4px;
+        padding: 3px 8px;
         font-size: 0.65em;
         opacity: 1;
     }
@@ -448,18 +543,25 @@ a.quarto-category:hover {
     }
 }
 
+// ─── CV download button ───────────────────────────────────────────────────────
+
 .cv-download {
     font-family: $headings-font-family;
     background-color: #A0DEFF;
     border-color: #A0DEFF;
     color: $black;
+    transition: background-color 0.22s ease, border-color 0.22s ease,
+                color 0.22s ease, box-shadow 0.22s ease;
 
     &:hover {
         background-color: $purple;
         border-color: $purple;
         color: $white;
+        box-shadow: 0 4px 16px rgba($purple, 0.28);
     }
 }
+
+// ─── Code tools ───────────────────────────────────────────────────────────────
 
 .code-tools-button {
     position: relative;
@@ -470,115 +572,118 @@ a.quarto-category:hover {
     }
 }
 
+// ─── Research listing page ────────────────────────────────────────────────────
 
-// Styling for Research Listing Page (inspired by Heiss)
 .project-list {
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 2em; // Add some margin at the bottom of the list
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2em;
 
-    li.project { // Style each project item
-      margin-bottom: 2.5em; // Space between items
-      padding-left: 0.5em; // Indent content slightly
-      // Use a light blue border (adjust $blue2 or $blue3 if you prefer)
-      border-left: 6px solid $blue3; 
+        li.project {
+            margin-bottom: 2.5em;
+            padding-left: 0.75em;
+            border-left: 4px solid $blue2;
+            transition: border-left-color 0.22s ease;
 
-      p { // Ensure paragraphs inside don't have extra margin
-        margin-bottom: 0.5em; // Add a little space below reference
-      }
-    }
-  }
+            &:hover {
+                border-left-color: $blue1;
+            }
 
-  // Adjust padding for the main content area if needed (already have padding on li.project)
-  // .project-content {
-  //   padding-left: 0.5em; 
-  // }
-
-  // Style the categories block
-  .project-categories {
-    margin-top: 0.5em; // Add space above categories
-    padding-left: 0; // Remove default padding if needed
-
-    .project-category {
-      // Style individual category tags as links
-      padding: 0.15em 0.5em; // Add some padding
-      margin-right: 0.5em; // Add space between tags
-      margin-bottom: 0.4em; // Allow wrapping
-      font-size: 0.7em;
-      text-transform: uppercase;
-      border: 1px solid $blue; // Use main blue for border
-      border-radius: 0.25rem; // Rounded corners
-      display: inline-block; // Make them sit side-by-side
-
-      a {
-        text-decoration: none; // Remove underline from category links
-        color: $blue; // Use main blue for link color
-      }
-      a:hover {
-        text-decoration: underline; // Add underline on hover
-        color: $darkpurple; // Use your dark hover color
-      }
-    }
-  }
-
-  // Style the container for the links (PDF, details, etc.)
-  .project-details-listing {
-    margin-top: 0.8em; // Space above the links bar
-    // Use a very light blue background (adjust $blue2 or $blue3)
-    background-color: $blue3; 
-    font-size: 0.9rem; // Adjust font size for links
-    padding-left: 0.5em; // Indent links slightly to align with content
-
-    ul.project-links {
-      margin-bottom: 0; // Remove bottom margin from the inner ul
-      padding-left: 0; // Remove default list padding
+            p {
+                margin-bottom: 0.5em;
+            }
+        }
     }
 
-    .project-link { // Style each link item (PDF, Data, etc.)
-      display: inline-block; // Place links side-by-side
-      white-space: nowrap;
-      padding: 0.5em 0.5em 0.5em 0.5em; // Padding around links
-      margin-right: 0.5em; // Space between links
+    .project-categories {
+        margin-top: 0.5em;
+        padding-left: 0;
 
-      // Link styling inherited from default $link-color ($blue)
-      i {
-        margin-right: 0.3em; // Space between icon and text
-      }
+        .project-category {
+            padding: 0.15em 0.5em;
+            margin-right: 0.4em;
+            margin-bottom: 0.4em;
+            font-size: 0.7em;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            border: 1px solid rgba($blue, 0.6);
+            border-radius: 0.25rem;
+            display: inline-block;
+            transition: background-color 0.18s ease, border-color 0.18s ease;
+
+            a {
+                text-decoration: none;
+                color: $blue;
+                transition: color 0.18s ease;
+            }
+
+            &:hover {
+                background-color: rgba($blue, 0.07);
+                border-color: $blue;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: $darkpurple;
+            }
+        }
     }
 
-    .details { // Special styling for the "Full details" link item
-      // Use your main blue color for the background
-      background-color: $blue; 
-      padding-right: 1em; // Ensure enough space
-      padding-left: 1em;
-      border-radius: 0.25rem; // Add rounded corners
+    .project-details-listing {
+        margin-top: 0.8em;
+        background-color: rgba($blue1, 0.1);
+        border-radius: 0 0.3rem 0.3rem 0;
+        font-size: 0.9rem;
+        padding-left: 0.5em;
 
-      a { // Style the link text inside the details button
-        color: $white !important; // Make text white (important to override default link color)
-        text-decoration: none !important; 
-      }
-      a:hover {
-        color: $white !important; 
-        text-decoration: underline !important;
-      }
+        ul.project-links {
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+
+        .project-link {
+            display: inline-block;
+            white-space: nowrap;
+            padding: 0.5em 0.5em;
+            margin-right: 0.5em;
+
+            a {
+                transition: color 0.18s ease;
+            }
+
+            i {
+                margin-right: 0.3em;
+            }
+        }
+
+        .details {
+            background-color: $blue;
+            padding-right: 1em;
+            padding-left: 1em;
+            border-radius: 0.25rem;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+
+            &:hover {
+                background-color: darken($blue, 8%);
+                box-shadow: 0 2px 8px rgba($blue, 0.28);
+            }
+
+            a {
+                color: $white !important;
+                text-decoration: none !important;
+            }
+
+            a:hover {
+                color: $white !important;
+                text-decoration: none !important;
+            }
+        }
     }
-  }
 }
 
-// Ensure alignment if using .project-content div (optional, check appearance)
-// .project-list .project-content {
-//   padding-left: 0.5em; // Match li.project padding-left
-// }
+// ─── Home page hero ───────────────────────────────────────────────────────────
 
-// Prevent zoom issues from embedded PDFs
-html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
-
-// Home page hero
 .home-hero {
     display: flex;
     align-items: center;
@@ -590,6 +695,12 @@ html {
         height: 7em;
         width: auto;
         flex-shrink: 0;
+        transition: transform 0.28s ease, opacity 0.28s ease;
+
+        &:hover {
+            transform: scale(1.05) rotate(-1deg);
+            opacity: 0.9;
+        }
     }
 
     .hero-text {
@@ -602,54 +713,67 @@ html {
         font-family: $headings-font-family;
         font-weight: 700;
         color: $gray-900;
-        font-size: 1.8em;
+        font-size: 1.9em;
         margin: 0;
-        line-height: 1.2;
+        line-height: 1.15;
+        letter-spacing: -0.025em;
     }
 
     .hero-subtitle {
         font-family: $headings-font-family;
-        font-weight: 600;
+        font-weight: 400;
         color: $gray-600;
-        font-size: 1.05em;
-        margin-top: 0.25em;
+        font-size: 1.02em;
+        margin-top: 0.3em;
         margin-bottom: 0;
+        letter-spacing: 0.01em;
     }
 }
 
-// Recent news section
+// ─── Recent news section ──────────────────────────────────────────────────────
+
 .news-section {
     margin: 0.5em 0 1.5em;
 
     .news-item {
         display: flex;
         gap: 1.2em;
-        padding: 0.85em 0;
+        padding: 0.9em 0.6em;
         border-bottom: 1px solid $gray-200;
+        border-radius: 0.3rem;
+        margin: 0 -0.6em;
+        transition: background-color 0.18s ease;
 
         &:first-child {
             border-top: 1px solid $gray-200;
+        }
+
+        &:hover {
+            background-color: rgba($blue1, 0.06);
         }
 
         .news-date {
             font-family: $headings-font-family;
             font-weight: 600;
             color: $blue1;
-            font-size: 0.82em;
+            font-size: 0.75em;
             min-width: 5em;
-            padding-top: 0.15em;
+            padding-top: 0.25em;
             flex-shrink: 0;
-            letter-spacing: 0.02em;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
         }
 
         .news-text {
             font-size: 0.95em;
-            line-height: 1.55;
+            line-height: 1.62;
             margin: 0;
             color: $gray-800;
         }
     }
 }
+
+// ─── Text-size adjust (body, for mobile) ─────────────────────────────────────
 
 body {
     -webkit-text-size-adjust: 100%;
@@ -657,10 +781,12 @@ body {
     text-size-adjust: 100%;
 }
 
+// ─── Embedded PDF container ───────────────────────────────────────────────────
+
 .embed-container {
     touch-action: pan-y;
     -webkit-overflow-scrolling: touch;
-    
+
     iframe {
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
@@ -668,5 +794,3 @@ body {
         backface-visibility: hidden;
     }
 }
-
-
