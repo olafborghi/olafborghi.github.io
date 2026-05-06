@@ -794,3 +794,79 @@ body {
         backface-visibility: hidden;
     }
 }
+
+// ─── Mobile responsiveness ────────────────────────────────────────────────────
+
+// Ensure images never cause horizontal overflow
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: map-get($grid-breakpoints, md)) {
+
+    // Hero: stack logo and text vertically
+    .home-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+        padding: 1.2em 0 0.3em;
+
+        .hero-logo {
+            height: 4.5em;
+        }
+
+        .hero-name {
+            font-size: 1.6em;
+        }
+    }
+
+    // Blog listing: collapse 3-column layout to single column
+    .blog .blog-entry {
+        flex-direction: column;
+
+        .metadata {
+            flex: none;
+        }
+
+        .thumbnail {
+            flex: none;
+            width: 100%;
+            order: -1;
+
+            img {
+                max-height: 180px;
+            }
+        }
+
+        .date {
+            text-align: left;
+        }
+    }
+
+    // Research listing: allow project links to wrap so they don't overflow
+    .project-list .project-link {
+        white-space: normal;
+    }
+
+    // Research detail page: same fix for project links
+    .quarto-title-block .project-link {
+        white-space: normal;
+        padding-bottom: 0.4em;
+    }
+}
+
+// Very small screens: stack news date above text
+@media (max-width: map-get($grid-breakpoints, sm)) {
+
+    .news-section .news-item {
+        flex-wrap: wrap;
+        gap: 0.2em;
+
+        .news-date {
+            width: 100%;
+            min-width: unset;
+            padding-top: 0;
+        }
+    }
+}
