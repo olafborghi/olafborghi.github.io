@@ -10,16 +10,16 @@ categories:
   - Action observation network
   - Linear mixed modeling
 pub-info:
-  reference: >- 
-    Poster of my master thesis. 
+  reference: >-
+    <strong>Borghi, O.</strong> (2024). Modulation of the action observation network by action, agent and observer factors [Poster]. Early Career Research Poster Session, Faculty of Psychology, University of Vienna.
   links:
     - name: PDF of poster
       url: Borghi_AON_Poster.pdf
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: true
     - name: Data and code
       url: https://github.com/olafborghi/AON_ACTION
-      icon: fa-brands fa-github
+      icon: bi bi-github
   extra: >-
     My first experiences with MRI analysis.  
 ---

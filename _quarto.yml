@@ -4,7 +4,10 @@
 website:
   title: "Olaf Borghi" # Your name
   description: "MSCA Doctoral Candidate"  # A brief slogan (optional)
-  image: img/my_image.jpg
+  image: img/my_image.jpeg
+  open-graph: true
+  twitter-card:
+    card-style: summary
   site-url: "https://www.olafborghi.com"
   repo-url: "https://github.com/olafborghi/olafborghi.github.io"
   favicon: img/favicon.png
@@ -28,17 +31,18 @@ website:
     
     # your social media handles
     right:
-      - icon: folder-symlink
-        href: https://www.olafborghi.com
       - icon: linkedin
-        href: https://www.linkedin.com/in/olaf-borghi-864276280/        
-      - icon: twitter
+        aria-label: LinkedIn
+        href: https://www.linkedin.com/in/olaf-borghi-864276280/
+      - icon: bluesky
+        aria-label: Bluesky
         href: https://bsky.app/profile/olafborghi.com
       - icon: github
+        aria-label: GitHub
         href: https://github.com/olafborghi
       - icon: envelope
-        aria-label: email
-        href: "mailto:olaf.borghi@rhul.ac.uk"  
+        aria-label: Email
+        href: "mailto:olaf.borghi@rhul.ac.uk"
   
   
 
@@ -67,6 +71,8 @@ project:
 
 execute:
   freeze: true
+
+title-block-banner: "#5AB2FF"
 
 format:
   html:

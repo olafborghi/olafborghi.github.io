@@ -24,14 +24,14 @@ pub-info:
   links:
     - name: PDF of article
       url: borghi-etal-2024-mindfulness-stress.pdf
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: true
     - name: Online version
       url: https://doi.org/10.3389/fpsyg.2024.1272720
-      icon: fa-solid fa-scroll
+      icon: bi bi-journal-text
     - name: Data and code
       url: https://osf.io/7tnwq/
-      icon: fa-brands fa-github
+      icon: bi bi-database
       
   extra: >-
     Mindfulness is often discussed as an important protective factor in the face of stress. But what if it is not higher mindfulness that leads to lower perceived stress, but in turn, stress levels influence our mindfulness? This is what we investigated in this paper. 

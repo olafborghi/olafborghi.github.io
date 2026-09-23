@@ -2,7 +2,6 @@
 title: Curriculum vitae
 description: "Olaf Borghi's CV"
 date: 2026-04-29
-title-block-banner: "#5AB2FF"
 published-title: CV last updated
 engine: knitr
 freeze: false
@@ -38,7 +37,7 @@ cv:
 ```{=html}
 <p class="text-center">
   <a class="btn btn-primary btn-lg cv-download" href="`r rmarkdown::metadata$cv$pdf`" target="_blank">
-    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
+    <i class="bi bi-file-earmark-arrow-down"></i>&ensp;Download current CV
   </a>
 </p>
 <div class="embed-container">

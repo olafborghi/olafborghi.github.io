@@ -7,3 +7,5 @@
 .DS_Store
 # Claude Code local settings
 .claude/
+
+**/*.quarto_ipynb

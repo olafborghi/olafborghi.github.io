@@ -13,16 +13,16 @@ categories:
   - Greece
   - Politics
 pub-info:
-  reference: >- 
-    Poster presentation at IP-PAD Amsterdam Meeting Conference Day. 
+  reference: >-
+    <strong>Borghi, O.</strong> (2025). Facing a dark future: Young people’s future anxiety and political attitudes [Poster]. IP-PAD Amsterdam Meeting Conference Day, Amsterdam.
   links:
     - name: PDF of poster
       url: Borghi_FA_Poster.pdf
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: true
     - name: Paper
       url: https://advances.in/psychology/10.56296/aip00042/
-      icon: fa-solid fa-scroll
+      icon: bi bi-journal-text
   extra: >-
     How is future anxiety associated with young people's political views?
 ---

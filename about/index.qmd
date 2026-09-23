@@ -1,6 +1,5 @@
 ---
 title: "About me"
-title-block-banner: "#5AB2FF"
 engine: knitr
 freeze: false
 ---
@@ -15,9 +14,9 @@ I was born and grew up in South Tyrol, a small multilingual region in Northern I
 
 In 2018 I moved to Austria to study Psychology at the University of Vienna, where I completed a BSc in Psychology and a MSc in Psychology with a specialization in social neuroscience, cognitive psychology and research methods. 
 
-In my master thesis, I investigated factors that modulate neural activation during action observation. I also got to opportunity to work as a research assistant in the Social, Cognitive and Affective Neuroscience (SCAN) Unit, where I contributed to projects on [comparative neuroscience with dogs](https://ccnu.univie.ac.at/) and humans and where I found my passion for research under the guidance of my mentors and supervisors Magdalena Boch and Claus Lamm.  
+In my master thesis, I investigated factors that modulate neural activation during action observation. I also got the opportunity to work as a research assistant in the Social, Cognitive and Affective Neuroscience (SCAN) Unit, where I contributed to projects on [comparative neuroscience with dogs](https://ccnu.univie.ac.at/) and humans and where I found my passion for research under the guidance of my mentors and supervisors Magdalena Boch and Claus Lamm.  
 
-In September 2023, I got the great opportunity to move to London to join the [IP-PAD Doctoral Network](https://www.ippad.eu) and to persue a PhD in Psychology at Royal Holloway, University of London, with Manos Tsakiris as my primary and Kaat Smets as secondary PhD supervisors. At Royal Holloway, I am closely collaborating with researchers from the [Centre for the Politics of Feelings](https://www.politics-of-feelings.com/) and the [Lab of Action and Body](https://twitter.com/labactionbody?lang=en), as well as with researchers from the Department of Politics and International Relations. 
+In September 2023, I got the great opportunity to move to London to join the [IP-PAD Doctoral Network](https://www.ippad.eu) and to pursue a PhD in Psychology at Royal Holloway, University of London, with Manos Tsakiris as my primary and Kaat Smets as secondary PhD supervisors. At Royal Holloway, I am closely collaborating with researchers from the [Centre for the Politics of Feelings](https://www.politics-of-feelings.com/) and the [Lab of Action and Body](https://twitter.com/labactionbody?lang=en), as well as with researchers from the Department of Politics and International Relations. 
 
 You can hear more about my research project and myself in the short video below. 
 
@@ -28,7 +27,7 @@ You can hear more about my research project and myself in the short video below.
 ----
 
 ```{=html}
-<div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.ippad.eu/" role="button" target="_blank" style="padding: 15px 30px;">IP-PAD MSCA Doctoral Network Member</a>
-</div>
+<p class="cta-row">
+<a class="btn cta-button" href="https://www.ippad.eu/" role="button" target="_blank" rel="noopener">IP-PAD MSCA Doctoral Network Member <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
+</p>
 ```

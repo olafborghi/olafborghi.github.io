@@ -27,17 +27,17 @@ pub-info:
   links:
     - name: PDF of article
       url: borghi-etal-2023-mindfulness-empathy.pdf
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: true
     - name: Online version
       url: https://doi.org/10.1038/s41598-023-30323-6
-      icon: fa-solid fa-scroll
+      icon: bi bi-journal-text
     - name: Data and code
       url: https://osf.io/ujp3e/
-      icon: fa-brands fa-github
+      icon: bi bi-database
       
   extra: >-
-    This was my first, first author paper as a result from my undergratuate (BSc) thesis. If I would do this study now, I would probably do much different and maybe approach some analyses from a different point of view. Still, this was a huge learning process for me. 
+    This was my first, first author paper as a result from my undergraduate (BSc) thesis. If I would do this study now, I would probably do much different and maybe approach some analyses from a different point of view. Still, this was a huge learning process for me. 
 doi: 10.1038/s41598-023-30323-6
 ---
 

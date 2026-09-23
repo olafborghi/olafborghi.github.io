@@ -15,10 +15,10 @@ author:
     orcid: 0000-0001-7753-7576
     affiliation: Royal Holloway, University of London
 categories: 
-  - Motivated Reasoning
-  - Cognitive Control
-  - Cognitive Reflection
-  - Bayesian Updating
+  - Motivated reasoning
+  - Cognitive control
+  - Cognitive reflection
+  - Bayesian updating
 
 pub-info:
   reference: >- 
@@ -29,14 +29,14 @@ pub-info:
   links:
     - name: PDF of article
       url: borghi-etal-2026-motivated-reasoning.pdf
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: true
     - name: Online version
       url: https://authors.elsevier.com/sd/article/S0010-0277(25)00314-2
-      icon: fa-solid fa-scroll
+      icon: bi bi-journal-text
     - name: Data and code
       url: https://osf.io/uztn7/
-      icon: fa-brands fa-github
+      icon: bi bi-database
       
   extra: >-
     In politics, people are not always truth seekers. Often, we reach conclusions because they fit with preferred political narratives: we are biased by ideological motivations. But are some people better equipped to overcome such bias than others?

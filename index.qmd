@@ -1,56 +1,33 @@
 ---
-about:
-  template: jolla
-  id: about-block
-  image: "img/my_image.jpeg"
-  links:
-    - icon: twitter
-      text: Bluesky
-      href: https://bsky.app/profile/olafborghi.com
-    - icon: github
-      text: Github
-      href: https://github.com/olafborghi
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/olaf-borghi-864276280/
-    - icon: envelope
-      text: Email
-      href: "mailto:olaf.borghi@rhul.ac.uk"
-engine: knitr
+pagetitle: "Olaf Borghi"
+title-block-banner: false
 freeze: false
 ---
 
 ```{=html}
-<style>
-#title-block-header { display: none !important; }
-main.content { padding-top: 0 !important; margin-top: 0 !important; }
-.quarto-about-jolla,
-.about-entity,
-#about-block { padding-top: 0 !important; margin-top: 0 !important; }
-.quarto-about-jolla .about-image { margin-top: 0 !important; }
-</style>
-```
-
-```{=html}
 <div class="home-hero">
-  <img src="img/new_logo.svg" class="hero-logo" alt="OB Logo">
+  <img src="img/my_image.jpeg" class="hero-photo" alt="Photo of Olaf Borghi">
   <div class="hero-text">
-    <div class="hero-name">Olaf Borghi, MSc</div>
-    <div class="hero-subtitle">Doctoral Candidate in Psychology</div>
+    <p class="hero-name" role="heading" aria-level="1">Olaf Borghi, MSc</p>
+    <p class="hero-subtitle">Doctoral Candidate in Psychology</p>
+    <ul class="hero-links">
+      <li><a href="https://bsky.app/profile/olafborghi.com"><i class="bi bi-bluesky" aria-hidden="true"></i>Bluesky</a></li>
+      <li><a href="https://github.com/olafborghi"><i class="bi bi-github" aria-hidden="true"></i>GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/olaf-borghi-864276280/"><i class="bi bi-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+      <li><a href="mailto:olaf.borghi@rhul.ac.uk"><i class="bi bi-envelope" aria-hidden="true"></i>Email</a></li>
+      <li><a href="cv/"><i class="bi bi-file-earmark-person" aria-hidden="true"></i>CV</a></li>
+    </ul>
   </div>
 </div>
 ```
-
-::: {#about-block}
-:::
 
 I am a doctoral candidate in the Marie-Curie network "[Interdisciplinary Perspectives of the Politics of Adolescence & Democracy](https://www.ippad.eu)" based at the Centre for the Politics of Feelings (Royal Holloway, University of London).
 
 In my PhD, I investigate how political beliefs and attitudes develop, and the cognitive and emotional factors underlying this development. The developmental focus of my research works in two ways. First, I focus on adolescence and young adulthood – times of cognitive, emotional, and political change. Second, I study processes of belief development, examining how people change their minds based on new information, and different biases that affect political belief formation and updating. I also have a research focus on how young people feel about and imagine their future in times of multiple crises, and how this relates to their support for democracy and ideological views, including gender divides on political issues.
 
-If you are interested about my work, would like to chat or collaborate, [contact me](mailto:olaf.borghi@rhul.ac.uk)!
+If you are interested in my work, would like to chat or collaborate, [contact me](mailto:olaf.borghi@rhul.ac.uk)!
 
-#### Recent News
+## Recent news
 
 ```{=html}
 <div class="news-section">
@@ -69,12 +46,6 @@ If you are interested about my work, would like to chat or collaborate, [contact
 </div>
 ```
 
-#### Methodological interests and open science
+## Methodological interests and open science
 
 My work has a strong methodological and interdisciplinary focus. I combine quantitative methods and tools from across the social, developmental, and cognitive sciences, including cognitive tasks, survey experiments, text analysis, and cognitive modelling. I also place a strong emphasis on open science, and commit to openly sharing data and materials for all my papers.
-
-```{=html}
-<div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.ippad.eu/" role="button" target="_blank" style="padding: 15px 30px;">IP-PAD MSCA Doctoral Network</a>
-</div>
-```

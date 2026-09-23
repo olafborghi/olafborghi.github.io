@@ -1,9 +1,6 @@
 # Date format
 date-format: "MMMM YYYY"
 
-# Enable banner style title blocks
-title-block-banner: "#5AB2FF"
-
 # Default for table of contents
 toc: true
 toc-title: Contents
@@ -19,5 +16,6 @@ include-back-link: true
 
 format:
   html:
+    code-overflow: wrap
     template-partials:
       - ../html/research/title-block.html

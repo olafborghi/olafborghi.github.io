@@ -9,7 +9,6 @@ categories:
   - datavis
   - IP-PAD
   - workshop
-title-block-banner: "#5AB2FF"
 engine: knitr
 freeze: false
 slides:
@@ -19,7 +18,7 @@ slides:
 ```{=html}
 <p class="text-center">
   <a class="btn btn-primary btn-lg cv-download" href="`r rmarkdown::metadata$slides$pdf`" target="_blank">
-    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download Slides
+    <i class="bi bi-file-earmark-arrow-down"></i>&ensp;Download Slides
   </a>
 </p>
 <div class="embed-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
