@@ -36,6 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./img/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -45,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5cce0e109750fa7b4eb348552f5cf9d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e2d9533d3983edf0f3c0eb1995fdb4fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,15 +74,73 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-news .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-type','listing-date','listing-description','listing-image','listing-more',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-type","listing-date","listing-description","listing-image","listing-more"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-news'] = new List('listing-news', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="Olaf Borghi">
-<meta property="og:description" content="MSCA Doctoral Candidate">
+<meta property="og:description" content="Postdoctoral Fellow">
 <meta property="og:image" content="https://www.olafborghi.com/img/my_image.jpeg">
 <meta property="og:site_name" content="Olaf Borghi">
 <meta property="og:image:alt" content="Photo of Olaf Borghi">
 <meta name="twitter:title" content="Olaf Borghi">
-<meta name="twitter:description" content="MSCA Doctoral Candidate">
+<meta name="twitter:description" content="Postdoctoral Fellow">
 <meta name="twitter:image" content="https://www.olafborghi.com/img/my_image.jpeg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image:alt" content="Photo of Olaf Borghi">
@@ -167,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
   <img src="img/my_image.jpeg" class="hero-photo" alt="Photo of Olaf Borghi">
   <div class="hero-text">
     <p class="hero-name" role="heading" aria-level="1">Olaf Borghi, MSc</p>
-    <p class="hero-subtitle">Doctoral Candidate in Psychology</p>
+    <p class="hero-subtitle">Postdoctoral Fellow | Centre for the Politics of Feelings</p>
     <ul class="hero-links">
       <li><a href="https://bsky.app/profile/olafborghi.com"><i class="bi bi-bluesky" aria-hidden="true"></i>Bluesky</a></li>
       <li><a href="https://github.com/olafborghi"><i class="bi bi-github" aria-hidden="true"></i>GitHub</a></li>
@@ -177,29 +237,143 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </div>
 </div>
-<p>I am a doctoral candidate in the Marie-Curie network “<a href="https://www.ippad.eu">Interdisciplinary Perspectives of the Politics of Adolescence &amp; Democracy</a>” based at the Centre for the Politics of Feelings (Royal Holloway, University of London).</p>
-<p>In my PhD, I investigate how political beliefs and attitudes develop, and the cognitive and emotional factors underlying this development. The developmental focus of my research works in two ways. First, I focus on adolescence and young adulthood – times of cognitive, emotional, and political change. Second, I study processes of belief development, examining how people change their minds based on new information, and different biases that affect political belief formation and updating. I also have a research focus on how young people feel about and imagine their future in times of multiple crises, and how this relates to their support for democracy and ideological views, including gender divides on political issues.</p>
+<p>I am a Postdoctoral Fellow at the <a href="https://www.politics-of-feelings.com">Centre for the Politics of Feelings</a> at the University of London. Before that, I was a doctoral candidate in the Marie-Curie network “<a href="https://www.ippad.eu">Interdisciplinary Perspectives of the Politics of Adolescence &amp; Democracy</a>” at Royal Holloway, University of London.</p>
+<p>In my research, I investigate how political beliefs and attitudes develop, and the cognitive and emotional factors underlying this development. The developmental focus of my research works in two ways. First, I focus on adolescence and young adulthood, times of cognitive, emotional, and political change. Second, I study processes of belief development, examining how people change their minds based on new information, and different biases that affect political belief formation and updating. I also have a research focus on how young people feel about and imagine their future in times of multiple crises, and how this relates to their support for democracy and ideological views, including gender divides on political issues.</p>
 <p>If you are interested in my work, would like to chat or collaborate, <a href="mailto:olaf.borghi@rhul.ac.uk">contact me</a>!</p>
 <section id="recent-news" class="level2">
 <h2 class="anchored" data-anchor-id="recent-news">Recent news</h2>
-<div class="news-section">
-  <div class="news-item">
-    <span class="news-date">Apr 2026</span>
-    <p class="news-text">My research was featured in Bridging Divides, a new initiative and podcast series from the British Red Cross. As guest in Episode 2, I had the chance to talk about belief updating in politics and beyond. <a href="https://www.youtube.com/watch?v=bRmexgvjphU"><strong>Bridging Divides: Can we really change people's minds?</strong></a></p>
+<div id="listing-news" class="quarto-listing quarto-listing-container-custom">
+<div class="news-carousel">
+  <div class="news-controls" aria-hidden="false">
+    <button type="button" class="news-nav news-prev" aria-label="Previous news"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+    <button type="button" class="news-nav news-next" aria-label="Next news"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
   </div>
-  <div class="news-item">
-    <span class="news-date">Nov 2025</span>
-    <p class="news-text">Our paper "Mind over bias: How is cognitive control related to politically motivated reasoning?" has been published in <em>Cognition</em>. <a href="research/articles/borghi-etal-2026/"><strong>Borghi et al. (2026)</strong></a></p>
-  </div>
-  <div class="news-item">
-    <span class="news-date">Oct 2025</span>
-    <p class="news-text">The first paper of my PhD, "Facing a dark future: Young people's future anxiety and political attitudes in the UK and Greece", has been published in a special issue on the Psychology of Pushback in <em>Advances.in/Psychology</em>. <a href="research/articles/borghi-etal-2025/"><strong>Borghi et al. (2025)</strong></a></p>
+  <div class="news-track list" tabindex="0" role="region" aria-label="Recent news">
+    
+    
+    <article class="news-card" data-index="0" data-listing-date-sort="1787266800000">
+      <a class="news-card-link" href="research/preprints/borghi-etal-2026a/">
+        
+        <div class="news-card-image"><img src="img/news/preprint-future-anxiety.jpg" alt="" loading="lazy"></div>
+        
+        <div class="news-card-body">
+          <p class="news-card-meta">
+            <span class="news-card-type">Preprint</span>
+            <span class="news-card-date listing-date">Aug 2026</span>
+          </p>
+          <p class="news-card-title listing-title">Future anxiety affects youth’s democratic support and engagement</p>
+          <p class="news-card-text listing-description">A preregistered experiment with 1,895 young people on how future anxiety and hope shape democratic attitudes.</p>
+          <span class="news-card-more">Read more <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+        </div>
+      </a>
+    </article>
+    
+    
+    <article class="news-card" data-index="1" data-listing-date-sort="1787180400000">
+      <a class="news-card-link" href="research/preprints/borghi-etal-2026b/">
+        
+        <div class="news-card-image"><img src="img/news/preprint-democratic-effort.jpg" alt="" loading="lazy"></div>
+        
+        <div class="news-card-body">
+          <p class="news-card-meta">
+            <span class="news-card-type">Preprint</span>
+            <span class="news-card-date listing-date">Aug 2026</span>
+          </p>
+          <p class="news-card-title listing-title">When democracy is worth the effort</p>
+          <p class="news-card-text listing-description">Correcting misperceptions about political opponents increases partisans’ motivation to make pro-democratic efforts that benefit the other side.</p>
+          <span class="news-card-more">Read more <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+        </div>
+      </a>
+    </article>
+    
+    
+    <article class="news-card" data-index="2" data-listing-date-sort="1774998000000">
+      <a class="news-card-link" href="https://www.youtube.com/watch?v=bRmexgvjphU" target="_blank" rel="noopener">
+        
+        <div class="news-card-image"><img src="img/news/podcast-bridging-divides.jpg" alt="" loading="lazy"></div>
+        
+        <div class="news-card-body">
+          <p class="news-card-meta">
+            <span class="news-card-type">Podcast</span>
+            <span class="news-card-date listing-date">Apr 2026</span>
+          </p>
+          <p class="news-card-title listing-title">Bridging Divides: Can we really change people’s minds?</p>
+          <p class="news-card-text listing-description">Guest on Episode 2 of the British Red Cross podcast series, talking about belief updating in politics and beyond.</p>
+          <span class="news-card-more">Watch the episode <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></span>
+        </div>
+      </a>
+    </article>
+    
+    
+    <article class="news-card" data-index="3" data-listing-date-sort="1761955200000">
+      <a class="news-card-link" href="research/articles/borghi-etal-2026/">
+        
+        <div class="news-card-image"><img src="img/news/paper-mind-over-bias.jpg" alt="" loading="lazy"></div>
+        
+        <div class="news-card-body">
+          <p class="news-card-meta">
+            <span class="news-card-type">Paper</span>
+            <span class="news-card-date listing-date">Nov 2025</span>
+          </p>
+          <p class="news-card-title listing-title">Mind over bias</p>
+          <p class="news-card-text listing-description">Our paper on how cognitive control relates to politically motivated reasoning is out in Cognition.</p>
+          <span class="news-card-more">Read more <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+        </div>
+      </a>
+    </article>
+    
+    
+    <article class="news-card" data-index="4" data-listing-date-sort="1760050800000">
+      <a class="news-card-link" href="research/articles/borghi-etal-2025/">
+        
+        <div class="news-card-image"><img src="img/news/paper-dark-future.jpg" alt="" loading="lazy"></div>
+        
+        <div class="news-card-body">
+          <p class="news-card-meta">
+            <span class="news-card-type">Paper</span>
+            <span class="news-card-date listing-date">Oct 2025</span>
+          </p>
+          <p class="news-card-title listing-title">Facing a dark future</p>
+          <p class="news-card-text listing-description">The first paper of my PhD, on young people’s future anxiety and political attitudes in the UK and Greece, is out in Advances.in/Psychology.</p>
+          <span class="news-card-more">Read more <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+        </div>
+      </a>
+    </article>
+    
   </div>
 </div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".news-carousel").forEach((carousel) => {
+    const track = carousel.querySelector(".news-track");
+    const prev = carousel.querySelector(".news-prev");
+    const next = carousel.querySelector(".news-next");
+    const step = () => {
+      const card = track.querySelector(".news-card");
+      return card ? card.getBoundingClientRect().width + 16 : track.clientWidth * 0.8;
+    };
+    const update = () => {
+      const max = track.scrollWidth - track.clientWidth - 2;
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= max;
+      carousel.classList.toggle("is-scrollable", track.scrollWidth > track.clientWidth + 2);
+      carousel.classList.toggle("at-end", track.scrollLeft >= max);
+    };
+    prev.addEventListener("click", () => track.scrollBy({ left: -step(), behavior: "smooth" }));
+    next.addEventListener("click", () => track.scrollBy({ left: step(), behavior: "smooth" }));
+    track.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  });
+});
+</script>
 </section>
 <section id="methodological-interests-and-open-science" class="level2">
 <h2 class="anchored" data-anchor-id="methodological-interests-and-open-science">Methodological interests and open science</h2>
 <p>My work has a strong methodological and interdisciplinary focus. I combine quantitative methods and tools from across the social, developmental, and cognitive sciences, including cognitive tasks, survey experiments, text analysis, and cognitive modelling. I also place a strong emphasis on open science, and commit to openly sharing data and materials for all my papers.</p>
+
 
 
 </section>

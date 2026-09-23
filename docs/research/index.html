@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dae78c2e920efe870c7d0aeb24e20c88.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-f75f811d1e8464165a58a028c3530b7d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -112,13 +112,41 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-website','listing-project','listing-execute','listing-title-block-banner','listing-format','listing-engines','listing-language','listing-date-format','listing-toc','listing-toc-title','listing-toc-location','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-website","listing-project","listing-execute","listing-title-block-banner","listing-format","listing-engines","listing-language","listing-date-format","listing-toc","listing-toc-title","listing-toc-location","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-preprints'] = new List('listing-preprints', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-reports .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-website','listing-project','listing-execute','listing-title-block-banner','listing-format','listing-engines','listing-language','listing-date-format','listing-toc','listing-toc-title','listing-toc-location','listing-include-back-link','listing-title','listing-subtitle','listing-date','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-website","listing-project","listing-execute","listing-title-block-banner","listing-format","listing-engines","listing-language","listing-date-format","listing-toc","listing-toc-title","listing-toc-location","listing-include-back-link","listing-title","listing-subtitle","listing-date","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-reports'] = new List('listing-reports', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -197,11 +225,11 @@ window.Quarto = {
 </script>
 
 <meta property="og:title" content="Research – Olaf Borghi">
-<meta property="og:description" content="MSCA Doctoral Candidate">
+<meta property="og:description" content="Postdoctoral Fellow">
 <meta property="og:image" content="https://www.olafborghi.com/research/img/my_image.jpeg">
 <meta property="og:site_name" content="Olaf Borghi">
 <meta name="twitter:title" content="Research – Olaf Borghi">
-<meta name="twitter:description" content="MSCA Doctoral Candidate">
+<meta name="twitter:description" content="Postdoctoral Fellow">
 <meta name="twitter:image" content="https://www.olafborghi.com/research/img/my_image.jpeg">
 <meta name="twitter:card" content="summary">
 </head>
@@ -304,17 +332,18 @@ window.Quarto = {
   <ul>
   <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link active" data-scroll-target="#journal-articles">Journal articles</a></li>
   <li><a href="#preprints" id="toc-preprints" class="nav-link" data-scroll-target="#preprints">Preprints</a></li>
+  <li><a href="#reports" id="toc-reports" class="nav-link" data-scroll-target="#reports">Reports</a></li>
   <li><a href="#posters" id="toc-posters" class="nav-link" data-scroll-target="#posters">Posters</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="QWN0aW9uJTIwb2JzZXJ2YXRpb24lMjBuZXR3b3Jr">Action observation network <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QWRvbGVzY2VuY2U=">Adolescence <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjB1cGRhdGluZw==">Bayesian updating <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29nbml0aXZlJTIwY29udHJvbA==">Cognitive control <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29nbml0aXZlJTIwcmVmbGVjdGlvbg==">Cognitive reflection <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW1vdGlvbiUyMHJlZ3VsYXRpb24=">Emotion regulation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW1wYXRoeQ==">Empathy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Zk1SSQ==">fMRI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RnV0dXJlJTIwYW54aWV0eQ==">Future anxiety <span class="quarto-category-count">(2)</span></div><div class="category" data-category="R3JlZWNl">Greece <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SWRlb2xvZ3k=">Ideology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SVAtUEFE">IP-PAD <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGluZWFyJTIwbWl4ZWQlMjBtb2RlbGluZw==">Linear mixed modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TG9uZ2l0dWRpbmFsJTIwc3VydmV5JTIwc3R1ZHk=">Longitudinal survey study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWluZGZ1bG5lc3M=">Mindfulness <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TW90aXZhdGVkJTIwcmVhc29uaW5n">Motivated reasoning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T2JzZXJ2YXRpb25hbCUyMHN0dWR5">Observational study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGVyY2VpdmVkJTIwc3RyZXNz">Perceived stress <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9saXRpY2FsJTIwYXR0aXR1ZGVz">Political attitudes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9saXRpY3M=">Politics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmFuZG9tLWludGVyY2VwdCUyMGNyb3NzLWxhZ2dlZCUyMHBhbmVsJTIwbW9kZWw=">Random-intercept cross-lagged panel model <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RydWN0dXJhbCUyMGVxdWF0aW9uJTIwbW9kZWxpbmc=">Structural equation modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VUs=">UK <span class="quarto-category-count">(1)</span></div><div class="category" data-category="WW91bmclMjBwZW9wbGUncyUyMHBvbGl0aWNz">Young people's politics <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="QWN0aW9uJTIwb2JzZXJ2YXRpb24lMjBuZXR3b3Jr">Action observation network <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QWRvbGVzY2VuY2U=">Adolescence <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjB1cGRhdGluZw==">Bayesian updating <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29nbml0aXZlJTIwY29udHJvbA==">Cognitive control <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29nbml0aXZlJTIwcmVmbGVjdGlvbg==">Cognitive reflection <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tcHV0YXRpb25hbCUyMG1vZGVsaW5n">Computational modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVtb2NyYWN5">Democracy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVtb2NyYXRpYyUyMGF0dGl0dWRlcw==">Democratic attitudes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVtb2NyYXRpYyUyMHN1cHBvcnQ=">Democratic support <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RWZmb3J0">Effort <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW1vdGlvbiUyMGluZHVjdGlvbg==">Emotion induction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW1vdGlvbiUyMHJlZ3VsYXRpb24=">Emotion regulation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW1wYXRoeQ==">Empathy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Zk1SSQ==">fMRI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RnV0dXJlJTIwYW54aWV0eQ==">Future anxiety <span class="quarto-category-count">(4)</span></div><div class="category" data-category="R3JlZWNl">Greece <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SWRlb2xvZ3k=">Ideology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SVAtUEFE">IP-PAD <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGluZWFyJTIwbWl4ZWQlMjBtb2RlbGluZw==">Linear mixed modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TG9uZ2l0dWRpbmFsJTIwc3VydmV5JTIwc3R1ZHk=">Longitudinal survey study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWluZGZ1bG5lc3M=">Mindfulness <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TWlzcGVyY2VwdGlvbnM=">Misperceptions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TW90aXZhdGVkJTIwcmVhc29uaW5n">Motivated reasoning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T2JzZXJ2YXRpb25hbCUyMHN0dWR5">Observational study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGFydGlzYW5zaGlw">Partisanship <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGVyY2VpdmVkJTIwc3RyZXNz">Perceived stress <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9saXRpY2FsJTIwYXR0aXR1ZGVz">Political attitudes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9saXRpY2FsJTIwZW5nYWdlbWVudA==">Political engagement <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9saXRpY2FsJTIwdHJ1c3Q=">Political trust <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9saXRpY3M=">Politics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmFuZG9tLWludGVyY2VwdCUyMGNyb3NzLWxhZ2dlZCUyMHBhbmVsJTIwbW9kZWw=">Random-intercept cross-lagged panel model <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RydWN0dXJhbCUyMGVxdWF0aW9uJTIwbW9kZWxpbmc=">Structural equation modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3VydmV5JTIwZXhwZXJpbWVudA==">Survey experiment <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3VydmV5JTIwc3R1ZHk=">Survey study <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VUs=">UK <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Vm90ZSUyMGF0JTIwMTY=">Vote at 16 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="WW91bmclMjBwZW9wbGUncyUyMHBvbGl0aWNz">Young people's politics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="WW91dGg=">Youth <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
-<p>My research spans the fields of cognitive psychology, political science, and neuroscience. Here you can find my published journal articles, preprints, and other information about past and current projects.</p>
+<p>My research spans the fields of cognitive psychology, political science, and neuroscience. Here you can find my published journal articles, preprints, reports, and other information about past and current projects.</p>
 <hr>
 <section id="journal-articles" class="level2">
 <h2 class="anchored" data-anchor-id="journal-articles">Journal articles</h2>
@@ -597,6 +626,224 @@ window.Quarto = {
 <div class="research project-list">
 <ul class="list">
     
+        <li class="project" data-index="0" data-categories="RnV0dXJlJTIwYW54aWV0eSUyQ1lvdXRoJTJDRGVtb2NyYXRpYyUyMHN1cHBvcnQlMkNQb2xpdGljYWwlMjBlbmdhZ2VtZW50JTJDRW1vdGlvbiUyMGluZHVjdGlvbiUyQ1N1cnZleSUyMGV4cGVyaW1lbnQ=" data-listing-date-sort="1787180400000" data-listing-file-modified-sort="1790174276636" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
+            <div class="project-content listing-pub-info">
+                <p><strong>Borghi, O.</strong>, Lawall, K., Smets, K., &amp; Tsakiris, M. (2026). Future anxiety affects youth’s democratic support and engagement. PsyArXiv. https://doi.org/10.31234/osf.io/d5pyk_v1</p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Future anxiety">
+                            Future anxiety
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Youth">
+                            Youth
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Democratic support">
+                            Democratic support
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Political engagement">
+                            Political engagement
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Emotion induction">
+                            Emotion induction
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Survey experiment">
+                            Survey experiment
+                        </a></div>
+                    
+            </div>
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/preprints/borghi-etal-2026a/index.html" class="listing-name">
+                            <i class="bi bi-info-circle"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="../research/preprints/borghi-etal-2026a/borghi-etal-2026a-future-anxiety-experiment.pdf">
+                        
+                            <i class="bi bi-file-earmark-pdf"></i> PDF of preprint
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://osf.io/preprints/psyarxiv/d5pyk_v1">
+                        
+                            <i class="bi bi-journal-text"></i> Online version
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://osf.io/cfst2">
+                        
+                            <i class="bi bi-database"></i> Data and materials
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li class="project" data-index="1" data-categories="RGVtb2NyYWN5JTJDRWZmb3J0JTJDQ29tcHV0YXRpb25hbCUyMG1vZGVsaW5nJTJDTWlzcGVyY2VwdGlvbnMlMkNQYXJ0aXNhbnNoaXA=" data-listing-date-sort="1787180400000" data-listing-file-modified-sort="1790174276638" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
+            <div class="project-content listing-pub-info">
+                <p><strong>Borghi, O.</strong>, Tsakiris, M., &amp; von Mohr, M. (2026). When democracy is worth the effort: Seeing the other side as willing strengthens pro-democratic motivation. PsyArXiv. https://doi.org/10.31234/osf.io/9jf8s_v3</p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Democracy">
+                            Democracy
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Effort">
+                            Effort
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Computational modeling">
+                            Computational modeling
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Misperceptions">
+                            Misperceptions
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Partisanship">
+                            Partisanship
+                        </a></div>
+                    
+            </div>
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/preprints/borghi-etal-2026b/index.html" class="listing-name">
+                            <i class="bi bi-info-circle"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="../research/preprints/borghi-etal-2026b/borghi-etal-2026b-democratic-effort.pdf">
+                        
+                            <i class="bi bi-file-earmark-pdf"></i> PDF of preprint
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://doi.org/10.31234/osf.io/9jf8s_v3">
+                        
+                            <i class="bi bi-journal-text"></i> Online version
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://doi.org/10.17605/OSF.IO/F6CGS">
+                        
+                            <i class="bi bi-database"></i> Data and code
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
+</ul>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="reports" class="level2">
+<h2 class="anchored" data-anchor-id="reports">Reports</h2>
+<div id="listing-reports" class="quarto-listing quarto-listing-container-custom">
+<div class="research project-list">
+<ul class="list">
+    
+        <li class="project" data-index="0" data-categories="QWRvbGVzY2VuY2UlMkNWb3RlJTIwYXQlMjAxNiUyQ0RlbW9jcmF0aWMlMjBhdHRpdHVkZXMlMkNGdXR1cmUlMjBhbnhpZXR5JTJDUG9saXRpY2FsJTIwdHJ1c3QlMkNTdXJ2ZXklMjBzdHVkeQ==" data-listing-date-sort="1769904000000" data-listing-file-modified-sort="1790174137156" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="353">
+            <div class="project-content listing-pub-info">
+                <p>Arahal, I., <strong>Borghi, O.</strong>, Ratnam, R., Smets, K., &amp; Tsakiris, M. (2026). Willing but wary: Adolescents, democracy and vote at 16. The IP-PAD UK Adolescent Study [Report]. Interdisciplinary Perspectives on the Politics of Adolescence and Democracy (IP-PAD), Royal Holloway, University of London.</p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Adolescence">
+                            Adolescence
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Vote at 16">
+                            Vote at 16
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Democratic attitudes">
+                            Democratic attitudes
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Future anxiety">
+                            Future anxiety
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Political trust">
+                            Political trust
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Survey study">
+                            Survey study
+                        </a></div>
+                    
+            </div>
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/reports/arahal-etal-2026/index.html" class="listing-name">
+                            <i class="bi bi-info-circle"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="../research/reports/arahal-etal-2026/arahal-etal-2026-willing-but-wary.pdf">
+                        
+                            <i class="bi bi-file-earmark-pdf"></i> PDF of report
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://www.ippad.eu/post/ip-pad-uk-adolescent-study">
+                        
+                            <i class="bi bi-journal-text"></i> Online version
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
 </ul>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>

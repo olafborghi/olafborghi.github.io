@@ -1,0 +1,41 @@
+# Recent news shown as cards on the home page (newest first by date).
+# To add an item: copy a block, put a 16:9 image (about 800x450) in img/news/, and fill in the fields.
+# path: an internal page (e.g. research/articles/.../) or a full external URL.
+# type: a short label shown above the title (e.g. Preprint, Paper, Podcast, Talk, Report).
+# more: optional link text (defaults to "Read more", or "Open link" for external URLs).
+
+- title: "Future anxiety affects youth’s democratic support and engagement"
+  type: Preprint
+  date: 2026-08-21
+  description: "A preregistered experiment with 1,895 young people on how future anxiety and hope shape democratic attitudes."
+  image: img/news/preprint-future-anxiety.jpg
+  path: research/preprints/borghi-etal-2026a/
+
+- title: "When democracy is worth the effort"
+  type: Preprint
+  date: 2026-08-20
+  description: "Correcting misperceptions about political opponents increases partisans’ motivation to make pro-democratic efforts that benefit the other side."
+  image: img/news/preprint-democratic-effort.jpg
+  path: research/preprints/borghi-etal-2026b/
+
+- title: "Bridging Divides: Can we really change people’s minds?"
+  type: Podcast
+  date: 2026-04-01
+  description: "Guest on Episode 2 of the British Red Cross podcast series, talking about belief updating in politics and beyond."
+  image: img/news/podcast-bridging-divides.jpg
+  path: https://www.youtube.com/watch?v=bRmexgvjphU
+  more: "Watch the episode"
+
+- title: "Mind over bias"
+  type: Paper
+  date: 2025-11-01
+  description: "Our paper on how cognitive control relates to politically motivated reasoning is out in Cognition."
+  image: img/news/paper-mind-over-bias.jpg
+  path: research/articles/borghi-etal-2026/
+
+- title: "Facing a dark future"
+  type: Paper
+  date: 2025-10-10
+  description: "The first paper of my PhD, on young people’s future anxiety and political attitudes in the UK and Greece, is out in Advances.in/Psychology."
+  image: img/news/paper-dark-future.jpg
+  path: research/articles/borghi-etal-2025/

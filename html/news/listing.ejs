@@ -1,0 +1,29 @@
+```{=html}
+<div class="news-carousel">
+  <div class="news-controls" aria-hidden="false">
+    <button type="button" class="news-nav news-prev" aria-label="Previous news"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+    <button type="button" class="news-nav news-next" aria-label="Next news"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+  </div>
+  <div class="news-track list" tabindex="0" role="region" aria-label="Recent news">
+    <% for (const item of items) { %>
+    <% const external = /^https?:\/\//.test(item.path); %>
+    <article class="news-card" <%= metadataAttrs(item) %>>
+      <a class="news-card-link" href="<%- item.path %>"<% if (external) { %> target="_blank" rel="noopener"<% } %>>
+        <% if (item.image) { %>
+        <div class="news-card-image"><img src="<%- item.image %>" alt="" loading="lazy"></div>
+        <% } %>
+        <div class="news-card-body">
+          <p class="news-card-meta">
+            <% if (item.type) { %><span class="news-card-type"><%= item.type %></span><% } %>
+            <span class="news-card-date listing-date"><%= item.date %></span>
+          </p>
+          <p class="news-card-title listing-title"><%= item.title %></p>
+          <p class="news-card-text listing-description"><%= item.description %></p>
+          <span class="news-card-more"><%= item.more || (external ? "Open link" : "Read more") %> <i class="bi <%- external ? 'bi-box-arrow-up-right' : 'bi-arrow-right' %>" aria-hidden="true"></i></span>
+        </div>
+      </a>
+    </article>
+    <% } %>
+  </div>
+</div>
+```

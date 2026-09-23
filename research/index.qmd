@@ -10,6 +10,10 @@ listing:
     contents: "preprints/*/index.qmd"
     sort: "date desc"
     template: ../html/research/listing.ejs
+  - id: reports
+    contents: "reports/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
   - id: posters
     contents: "posters/*/index.qmd"
     sort: "date desc"
@@ -19,7 +23,7 @@ include-back-link: false
 toc-location: right
 ---
 
-My research spans the fields of cognitive psychology, political science, and neuroscience. Here you can find my published journal articles, preprints, and other information about past and current projects. 
+My research spans the fields of cognitive psychology, political science, and neuroscience. Here you can find my published journal articles, preprints, reports, and other information about past and current projects. 
 
 ----
 
@@ -31,6 +35,11 @@ My research spans the fields of cognitive psychology, political science, and neu
 ## Preprints
 
 :::{#preprints}
+:::
+
+## Reports
+
+:::{#reports}
 :::
 
 ## Posters

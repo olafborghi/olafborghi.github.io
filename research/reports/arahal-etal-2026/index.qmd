@@ -1,0 +1,69 @@
+---
+title: "Willing but wary: Adolescents, democracy and vote at 16"
+subtitle: "The IP-PAD UK Adolescent Study"
+date: 2026-02-01
+author:
+  - name: Irene Arahal
+    affiliation: Royal Holloway, University of London
+  - name: Olaf Borghi
+    orcid: 0000-0001-9724-2839
+    affiliation: Royal Holloway, University of London
+  - name: Ryan Ratnam
+    affiliation: School of Advanced Study, University of London
+  - name: Kaat Smets
+    orcid: 0000-0003-4013-6255
+    affiliation: Royal Holloway, University of London
+  - name: Manos Tsakiris
+    orcid: 0000-0001-7753-7576
+    affiliation: Royal Holloway, University of London
+categories:
+  - Adolescence
+  - Vote at 16
+  - Democratic attitudes
+  - Future anxiety
+  - Political trust
+  - Survey study
+
+pub-info:
+  reference: >-
+    Arahal, I., <strong>Borghi, O.</strong>, Ratnam, R., Smets, K., & Tsakiris, M. (2026). Willing but wary: Adolescents, democracy and vote at 16. The IP-PAD UK Adolescent Study [Report]. Interdisciplinary Perspectives on the Politics of Adolescence and Democracy (IP-PAD), Royal Holloway, University of London.
+
+  links:
+    - name: PDF of report
+      url: arahal-etal-2026-willing-but-wary.pdf
+      icon: bi bi-file-earmark-pdf
+      local: true
+    - name: Online version
+      url: https://www.ippad.eu/post/ip-pad-uk-adolescent-study
+      icon: bi bi-journal-text
+
+  extra: >-
+    As the UK prepares to lower the voting age to 16, how are adolescents approaching political life before they formally enter it? We surveyed 993 young people aged 12 to 17 across the UK, alongside 801 adults, on politics, the future, and votes at 16.
+---
+
+## Important links
+
+-   [Report on the IP-PAD website](https://www.ippad.eu/post/ip-pad-uk-adolescent-study)
+
+## Executive summary
+
+As the UK prepares to lower the voting age to 16, a major democratic question comes into view: how are adolescents approaching political life before they formally enter it? This report addresses that question through original survey research with 993 young people aged 12 to 17 across the UK, alongside a parallel survey of 801 adults on the likely democratic consequences of lowering the voting age.
+
+The picture that emerges is clear. Adolescents in the UK are willing to engage in democracy, but they are doing so from a position of uncertainty and distrust. While many say they would vote and are interested in politics, this willingness is paired with widespread feelings of anxiety about the future, low confidence in political institutions and lack of faith in their own ability to make a change in politics.
+
+A majority of adolescents in this study report significant anxiety about the future, especially in relation to economic and political change. Young people who are more anxious about the future also report lower voting intentions, lower willingness to participate politically, less trust in political parties, and lower satisfaction with democracy. Adolescents in rural areas and those who find it difficult to live on their household income tend to report lower engagement, trust and satisfaction with democracy.
+
+The parallel survey of UK adults shows that the general public is divided about extending the vote to 16- and 17-year-olds. Many saw possible benefits, but a majority believed the reform would ultimately worsen democracy. Taken together, the findings suggest that enfranchisement alone will not secure democratic renewal. The democratic task is not simply to add new voters to the register. It is to make first-time political inclusion meaningful.
+
+## Citation
+
+``` bibtex
+@techreport{arahaletal_2026,
+  title = {Willing but Wary: {{Adolescents}}, Democracy and Vote at 16: {{The IP-PAD UK}} Adolescent Study},
+  author = {Arahal, Irene and Borghi, Olaf and Ratnam, Ryan and Smets, Kaat and Tsakiris, Manos},
+  year = 2026,
+  month = feb,
+  institution = {{Interdisciplinary Perspectives on the Politics of Adolescence and Democracy (IP-PAD), Royal Holloway, University of London}},
+  urldate = {2026-08-31}
+}
+```

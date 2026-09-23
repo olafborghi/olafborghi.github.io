@@ -1,0 +1,64 @@
+---
+title: "When democracy is worth the effort: Seeing the other side as willing strengthens pro-democratic motivation"
+date: 2026-08-20  
+author:
+  - name: Olaf Borghi
+    orcid: 0000-0001-9724-2839
+    affiliation: Royal Holloway, University of London
+  - name: Manos Tsakiris
+    orcid: 0000-0001-7753-7576
+    affiliation: Royal Holloway, University of London
+  - name: Mariana von Mohr
+    orcid: 0000-0003-0671-0735
+    affiliation: Royal Holloway, University of London
+categories:
+  - Democracy
+  - Effort
+  - Computational modeling
+  - Misperceptions
+  - Partisanship
+
+pub-info:
+  reference: >-
+    <strong>Borghi, O.</strong>, Tsakiris, M., & von Mohr, M. (2026). When democracy is worth the effort: Seeing the other side as willing strengthens pro-democratic motivation. PsyArXiv. https://doi.org/10.31234/osf.io/9jf8s_v3
+
+  links:
+    - name: PDF of preprint
+      url: borghi-etal-2026b-democratic-effort.pdf
+      icon: bi bi-file-earmark-pdf
+      local: true
+    - name: Online version
+      url: https://doi.org/10.31234/osf.io/9jf8s_v3
+      icon: bi bi-journal-text
+    - name: Data and code
+      url: https://doi.org/10.17605/OSF.IO/F6CGS
+      icon: bi bi-database
+
+  extra: >-
+    Democracy takes effort, and that effort does not always benefit one’s own side. Are partisans willing to work for democracy when the other side benefits? And what happens when they learn that their opponents are more willing than they thought?
+doi: 10.31234/osf.io/9jf8s_v3
+---
+
+## Important links
+
+-   [Preprint](https://doi.org/10.31234/osf.io/9jf8s_v3)
+-   [OSF repository](https://doi.org/10.17605/OSF.IO/F6CGS)
+-   [Preregistration Study 1](https://doi.org/10.17605/OSF.IO/ZYEVR)
+-   [Preregistration Study 2](https://doi.org/10.17605/OSF.IO/KXP2R)
+
+## Abstract
+
+Democracy takes effort, and these efforts do not always benefit one’s own political side. Across two preregistered studies (total N = 916), we used computational modeling of effortful behavior to measure US partisans’ motivation to strengthen democratic engagement in rural (traditionally Republican-leaning), urban (traditionally Democratic-leaning), or all US areas. Study 1 showed that participants were generally willing to make pro-democratic efforts, but less so when efforts benefited out-group areas, particularly among more affectively polarized participants. We hypothesized that this asymmetry is sustained by misperceptions about out-partisans’ willingness to engage in cross-partisan pro-democratic efforts. Study 2 showed that most participants (87%) underestimated out-party effort willingness. Importantly, correcting this misperception increased motivation to support out-group areas without significantly reducing in-group motivation. These findings suggest that cross-partisan pro-democratic motivation is common but partly obscured by misperceptions about out-partisans’ willingness, and that making this willingness visible might help sustain the collective effort democracy depends on.
+
+## Citation
+
+``` bibtex
+@misc{borghi2026democracy,
+  title = {When Democracy Is Worth the Effort: {{Seeing}} the Other Side as Willing Strengthens Pro-Democratic Motivation},
+  author = {Borghi, Olaf and Tsakiris, Manos and {von Mohr}, Mariana},
+  year = {2026},
+  publisher = {PsyArXiv},
+  doi = {10.31234/osf.io/9jf8s_v3},
+  keywords = {democracy, effort, computational modeling, misperceptions, partisanship}
+}
+```

@@ -1,7 +1,7 @@
 ---
 title: Curriculum vitae
 description: "Olaf Borghi's CV"
-date: 2026-04-29
+date: 2026-09-17
 published-title: CV last updated
 engine: knitr
 freeze: false

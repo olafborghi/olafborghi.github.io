@@ -14,7 +14,8 @@ GitHub Pages serves the `docs/` folder from the `main` branch, so commit the ren
 ## Structure
 
 - `index.qmd`, `about/`, `cv/`: main pages
-- `research/articles/`, `research/preprints/`, `research/posters/`: one folder per item with an `index.qmd` (metadata in `pub-info`)
+- `news.yml`: the "Recent news" cards on the home page (images in `img/news/`, 16:9, about 800×450)
+- `research/articles/`, `research/preprints/`, `research/reports/`, `research/posters/`: one folder per item with an `index.qmd` (metadata in `pub-info`)
 - `misc/`: talks, slides and other posts
 - `html/`: custom SCSS theme and listing templates
 

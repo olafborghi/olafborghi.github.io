@@ -1,0 +1,67 @@
+---
+title: "Future anxiety affects youth’s democratic support and engagement"
+date: 2026-08-20  
+author:
+  - name: Olaf Borghi
+    orcid: 0000-0001-9724-2839
+    affiliation: Royal Holloway, University of London
+  - name: Katharina Lawall
+    orcid: 0000-0002-6045-0105
+    affiliation: University of Reading
+  - name: Kaat Smets
+    orcid: 0000-0003-4013-6255
+    affiliation: Royal Holloway, University of London
+  - name: Manos Tsakiris
+    orcid: 0000-0001-7753-7576
+    affiliation: Royal Holloway, University of London
+categories:
+  - Future anxiety
+  - Youth
+  - Democratic support
+  - Political engagement
+  - Emotion induction
+  - Survey experiment
+
+pub-info:
+  reference: >-
+    <strong>Borghi, O.</strong>, Lawall, K., Smets, K., & Tsakiris, M. (2026). Future anxiety affects youth’s democratic support and engagement. PsyArXiv. https://doi.org/10.31234/osf.io/d5pyk_v1
+
+  links:
+    - name: PDF of preprint
+      url: borghi-etal-2026a-future-anxiety-experiment.pdf
+      icon: bi bi-file-earmark-pdf
+      local: true
+    - name: Online version
+      url: https://osf.io/preprints/psyarxiv/d5pyk_v1
+      icon: bi bi-journal-text
+    - name: Data and materials
+      url: https://osf.io/cfst2
+      icon: bi bi-database
+
+  extra: >-
+    Many young people today are anxious about the future. But does this anxiety change how they feel about democracy? In a preregistered survey experiment with nearly 1,900 young people, we tested the effects of inducing future anxiety or hope, compared to a control condition. 
+doi: 10.31234/osf.io/d5pyk_v1
+---
+
+## Important links
+
+-   [Preprint](https://osf.io/preprints/psyarxiv/d5pyk_v1)
+-   [OSF repository](https://osf.io/cfst2)
+-   [Preregistration](https://doi.org/10.17605/OSF.IO/C95NR)
+
+## Abstract
+
+Many of today’s young people are anxious about the future. Yet the consequences of their anxiety on democratic support and engagement remain underexplored. In this preregistered survey experiment we tested the causal effects of future anxiety on youth’s democratic attitudes. We exposed young people (N = 1,895; ages 16–26) to social media posts about the cost of living which were manipulated to induce future anxiety, reduce it through hope, or serve as a control. Increasing their future anxiety (vs. hope) resulted in a small but precisely estimated decrease in democratic support (−2.5 percentage points; 95% CI [−4.3, −0.8]), but without any effects on a behavioural candidate-choice task or on self-reported willingness to participate in politics. Conversely, hope (vs. control and anxiety) increased young people’s likelihood to seek information on how to get democratically involved (+6.9 percentage points; 95% CI [1.7, 12.0]). These findings provide experimental evidence that future-oriented feelings shape youth’s democratic support amidst multiple crises.
+
+## Citation
+
+``` bibtex
+@misc{borghi2026future,
+  title = {Future Anxiety Affects Youth’s Democratic Support and Engagement},
+  author = {Borghi, Olaf and Lawall, Katharina and Smets, Kaat and Tsakiris, Manos},
+  year = {2026},
+  publisher = {PsyArXiv},
+  doi = {10.31234/osf.io/d5pyk_v1},
+  keywords = {future anxiety, youth, democratic support, political engagement, emotion induction}
+}
+```

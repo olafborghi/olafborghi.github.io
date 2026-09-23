@@ -3,7 +3,7 @@
 # website settings
 website:
   title: "Olaf Borghi" # Your name
-  description: "MSCA Doctoral Candidate"  # A brief slogan (optional)
+  description: "Postdoctoral Fellow"  # A brief slogan (optional)
   image: img/my_image.jpeg
   open-graph: true
   twitter-card:
